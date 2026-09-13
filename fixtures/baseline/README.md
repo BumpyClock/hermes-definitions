@@ -16,7 +16,9 @@ separate records.
 - `input`, `input_sha256`, `legacy`: local basenames and exact input integrity.
   All cases are preflighted before evaluation builds or writes. Paths must be
   confined regular files without symlinks/hard links; legacy must not overlap the
-  input or manifest. Only `record` permits a missing initial legacy file.
+  input or manifest, including filesystem aliases such as case-only spellings.
+  Destination identity is checked again immediately before writing.
+  Only `record` permits a missing initial legacy file.
 - `provenance`: `kind`, creation/capture date, source URL, source fixture path and
   digest, retention basis and notes. Synthetic creation date is not a capture date.
   Fresh captures should additionally name the actual article URL, capture time,

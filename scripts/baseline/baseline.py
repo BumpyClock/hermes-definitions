@@ -267,6 +267,17 @@ def registered_owner(host):
     return domains.get(host, domains.get(fallback))
 
 
+def legacy_file(case, path, missing=False):
+    target = case_file(path, case["legacy"], missing=missing)
+    input_path = case_file(path, case["input"])
+    for protected in (input_path, path):
+        if target == protected or (
+            target.exists() and protected.exists() and target.samefile(protected)
+        ):
+            raise ValueError("legacy destination overlaps case input or manifest")
+    return target
+
+
 def validate_case_record(case, path, require_golden=True):
     required = {"id", "site", "engine_revision", "definition_identity", "input", "input_sha256", "provenance", "status", "expected", "legacy"}
     if not required <= case.keys():
@@ -288,9 +299,7 @@ def validate_case_record(case, path, require_golden=True):
     if source_url.scheme not in ("https", "http") or not source_url.hostname:
         raise ValueError("invalid provenance URL")
     input_path = case_file(path, case["input"])
-    legacy_path = case_file(path, case["legacy"], missing=not require_golden)
-    if legacy_path == input_path or legacy_path == path:
-        raise ValueError("legacy destination overlaps case input or manifest")
+    legacy_path = legacy_file(case, path, missing=not require_golden)
     site = json.loads((ROOT / "inventory/sites" / f"{case['site']}.json").read_text())
     if not case["input"].endswith(".html") or any(
         registered_owner(host) != site["configuration"]["Domain"]
@@ -411,7 +420,7 @@ def evaluate(engine, record=False):
         rows = [json.loads(line) for line in output.splitlines()]
         check_rows(case, rows)
         if record:
-            case_file(path, case["legacy"], missing=True).write_bytes(output)
+            legacy_file(case, path, missing=True).write_bytes(output)
         else:
             expected = [json.loads(line) for line in (path.parent / case["legacy"]).read_text().splitlines()]
             if rows != expected:

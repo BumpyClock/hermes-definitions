@@ -190,6 +190,64 @@ class BaselineValidationTests(unittest.TestCase):
                 self.assertEqual(sentinel.read_text(), "untouched")
                 self.assertEqual(original, {p: p.read_bytes() for p in original})
 
+    def test_record_rejects_real_case_aliases_before_execution(self):
+        with tempfile.TemporaryDirectory(dir=baseline.WORK) as directory:
+            root = Path(directory)
+            shutil.copytree(baseline.ROOT / "inventory", root / "inventory")
+            shutil.copytree(baseline.ROOT / "fixtures/baseline", root / "fixtures/baseline")
+            path = root / "fixtures/baseline/npr/case.json"
+            case = json.loads(path.read_text())
+            if not (path.parent / "CASE.JSON").exists():
+                self.skipTest("filesystem is case-sensitive; portable identity test covers the guard")
+            sentinel = root / "sentinel"
+            sentinel.write_text("untouched")
+            for name in ("CASE.JSON", case["input"].upper()):
+                with self.subTest(name=name):
+                    target = path.parent / name
+                    protected = path if name == "CASE.JSON" else path.parent / case["input"]
+                    self.assertTrue(target.samefile(protected))
+                    case["legacy"] = name
+                    path.write_text(json.dumps(case))
+                    before = {p: (p.read_bytes(), p.stat().st_mtime_ns) for p in root.rglob("*") if p.is_file()}
+                    with patch.object(baseline, "ROOT", root), patch.object(baseline, "validate_pinned_inventory") as inventory, patch.object(baseline, "prepare_evaluator") as prepare, patch.object(baseline, "run") as run, patch.object(baseline.subprocess, "check_output") as output, patch.object(Path, "write_bytes") as write:
+                        with self.assertRaisesRegex(ValueError, "overlaps"):
+                            baseline.evaluate(root, record=True)
+                        for operation in (inventory, prepare, run, output, write):
+                            operation.assert_not_called()
+                    self.assertEqual(before, {p: (p.read_bytes(), p.stat().st_mtime_ns) for p in before})
+
+    def test_record_rechecks_destination_identity_before_write(self):
+        with tempfile.TemporaryDirectory(dir=baseline.WORK) as directory:
+            root = Path(directory)
+            shutil.copytree(baseline.ROOT / "inventory", root / "inventory")
+            path = root / "fixtures/baseline/npr/case.json"
+            shutil.copytree(self.path.parent, path.parent)
+            case = json.loads(path.read_text())
+            legacy = path.parent / case["legacy"]
+            output = legacy.read_bytes()
+            original_samefile = Path.samefile
+            for protected in (path, path.parent / case["input"]):
+                with self.subTest(protected=protected.name):
+                    finished = False
+
+                    def observations(args):
+                        nonlocal finished
+                        finished = True
+                        return output
+
+                    def identity(left, right):
+                        if finished and left == legacy and right == protected:
+                            return True
+                        return original_samefile(left, right)
+
+                    before = {p: (p.read_bytes(), p.stat().st_mtime_ns) for p in path.parent.iterdir()}
+                    with patch.object(baseline, "ROOT", root), patch.object(baseline, "validate_pinned_inventory"), patch.object(baseline, "prepare_evaluator"), patch.object(baseline, "run"), patch.object(baseline.subprocess, "check_output", side_effect=observations), patch.object(Path, "samefile", autospec=True, side_effect=identity), patch.object(Path, "write_bytes") as write:
+                        with self.assertRaisesRegex(ValueError, "overlaps"):
+                            baseline.evaluate(root, record=True)
+                        self.assertTrue(finished)
+                        write.assert_not_called()
+                    self.assertEqual(before, {p: (p.read_bytes(), p.stat().st_mtime_ns) for p in before})
+
     def test_validate_rejects_inventory_corruption(self):
         with tempfile.TemporaryDirectory(dir=baseline.WORK) as directory:
             root = Path(directory)
