@@ -1,0 +1,101 @@
+{
+  "cohort": "selector-string-4",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "cite a"
+        },
+        {
+          "Attribute": "",
+          "Selector": "div.col-xs-12.article_header div.writer-container.writer-container-inline.writer-no-avatar h4.writer-name"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1.writer-name"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".tc_mark",
+        "figcaption"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".entry.post"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "thoughtcatalog.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1.title"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:title\"]"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 106182,
+      "path": "internal/fixtures/thoughtcatalog.com.html",
+      "sha256": "83cfb0318abe0b92ec8a5ebcea838350da71339e804c1c92d209695dea11bd69"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetThoughtCatalogExtractor",
+  "id": "ThoughtCatalogExtractor",
+  "source": {
+    "end_line": 54,
+    "line": 52,
+    "path": "internal/extractors/custom/thoughtcatalog_com.go",
+    "sha256": "11f6af65f79b39609ea93bbaeda1b7eb55a1f9b7ca0a144f804948139034daea"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

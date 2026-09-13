@@ -1,0 +1,120 @@
+{
+  "cohort": "complex-exception-45",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".byline-component__contributors b span"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".pull-quote.pull-quote--small"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "section.Article__Content"
+        ],
+        [
+          ".parsys.content",
+          ".__image-lead__"
+        ],
+        [
+          ".content"
+        ]
+      ],
+      "transforms": {
+        ".parsys.content": {
+          "kind": "function",
+          "line": 60,
+          "path": "internal/extractors/custom/www_nationalgeographic_com.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.init.func17"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".Article__Headline__Desc"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".article__deck"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.nationalgeographic.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1.main-title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 124714,
+      "path": "internal/fixtures/www.nationalgeographic.com.html",
+      "sha256": "7a9d601ca5f2b379ec70b14b9ce7573ee5204409ac3d0c90abc8de9e75dad013"
+    }
+  ],
+  "function_bearing": true,
+  "getter": "GetWwwNationalgeographicComExtractor",
+  "id": "WwwNationalgeographicComExtractor",
+  "source": {
+    "end_line": 100,
+    "line": 98,
+    "path": "internal/extractors/custom/www_nationalgeographic_com.go",
+    "sha256": "c05d42eaffc07d5fda089da2613a104878ba6fb47ca180210ad918ded7278b59"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

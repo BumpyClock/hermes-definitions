@@ -1,0 +1,78 @@
+{
+  "cohort": "selector-string-4",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "div#sponsor.tr-info-text"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".usa-alert> img"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "div#tab-body"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "div:has(> span.term[data-term=\"Last Update Posted\"])"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "clinicaltrials.gov",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": null,
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1.tr-solo_record"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 76497,
+      "path": "internal/fixtures/clinicaltrials.gov.html",
+      "sha256": "a7e4b288383d6908d9f946ad33b34a153d78e1fb75661fa8c73aa4e53f19505c"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetClinicaltrialsGovExtractor",
+  "id": "ClinicaltrialsGovExtractor",
+  "source": {
+    "end_line": 45,
+    "line": 43,
+    "path": "internal/extractors/custom/clinicaltrials_gov.go",
+    "sha256": "0d93020a8615544741547e5cbd6cf4f68036388a89080cb3a17f48bd7f97364f"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

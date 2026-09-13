@@ -1,0 +1,109 @@
+{
+  "cohort": "selector-string-3",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "a[data-ylk*=\"elm:author\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".productModule",
+        ".commerce",
+        "[class*=\"Advertisement\"]",
+        "nav",
+        "footer"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "div[data-article-body=\"true\"]"
+        ],
+        [
+          "article"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:description\"]"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"description\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.engadget.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:title\"]"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 123346,
+      "path": "internal/fixtures/www.engadget.com.html",
+      "sha256": "43a7ec14b77beeeacd5d3cb51191fd8d6e3021bfd04d5673c4d024821564f6a5"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwEngadgetComExtractor",
+  "id": "WwwEngadgetComExtractor",
+  "source": {
+    "end_line": 63,
+    "line": 61,
+    "path": "internal/extractors/custom/www_engadget_com.go",
+    "sha256": "a8efb4e93319a0174c7576416f24ad55f51889137b11eec862be964ba3b9d595"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

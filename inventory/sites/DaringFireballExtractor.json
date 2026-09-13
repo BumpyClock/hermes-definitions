@@ -1,0 +1,151 @@
+{
+  "cohort": "attribute-text-cleanup-43",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "[name='author']"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".author"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".byline"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        "div#Banner",
+        "div#Sidebar",
+        "div#Footer",
+        "#SidebarMartini",
+        ".smallprint",
+        "script",
+        "style",
+        "noscript",
+        "[href*='apps.apple.com']",
+        "img[src*='/martini/']",
+        ".ads",
+        ".advertisement",
+        ".sponsored"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "div#Main"
+        ],
+        [
+          ".main-content"
+        ],
+        [
+          "main"
+        ],
+        [
+          "article"
+        ],
+        [
+          "body"
+        ]
+      ],
+      "transforms": {
+        "p": {
+          "kind": "function",
+          "line": 83,
+          "path": "internal/extractors/custom/daringfireball_net.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.init.func2"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "datetime",
+          "Selector": "time"
+        },
+        {
+          "Attribute": "datetime",
+          "Selector": "[datetime]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "p.smallprint em"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "daringfireball.net",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "content",
+          "Selector": "meta[property='og:image']"
+        },
+        {
+          "Attribute": "content",
+          "Selector": "meta[name='twitter:image']"
+        },
+        {
+          "Attribute": "content",
+          "Selector": "meta[name='og:image']"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": [
+      "www.daringfireball.net"
+    ],
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "title"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h2.entry-title"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1.entry-title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [],
+  "function_bearing": true,
+  "getter": "GetDaringFireballExtractor",
+  "id": "DaringFireballExtractor",
+  "source": {
+    "end_line": 108,
+    "line": 106,
+    "path": "internal/extractors/custom/daringfireball_net.go",
+    "sha256": "2682240df3992e7ba2e2b5abf87bd7563686e6195603290e7c5c94d513b4f382"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

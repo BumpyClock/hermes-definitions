@@ -1,0 +1,94 @@
+{
+  "cohort": "selector-string-3",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".bloggerinchief p:first-of-type"
+        },
+        {
+          "Attribute": "",
+          "Selector": "#subcol p:has(img)"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        "#breadcrumbs",
+        "div.sbm",
+        "div.ad_footer"
+      ],
+      "disable_default_cleaner": true,
+      "selectors": [
+        [
+          "#maincol"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "YYYY年MM月DD日",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "div.pubdate"
+        }
+      ],
+      "timezone": "Asia/Tokyo"
+    },
+    "Dek": null,
+    "Domain": "www.publickey1.jp",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 26404,
+      "path": "internal/fixtures/www.publickey1.jp.html",
+      "sha256": "dd5230196abdc020a4ce37eb1333fbec834d408dd799c0da57f15c9c0cbc41e4"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwPublickey1JpExtractor",
+  "id": "Publickey1JpExtractor",
+  "source": {
+    "end_line": 62,
+    "line": 60,
+    "path": "internal/extractors/custom/www_publickey1_jp.go",
+    "sha256": "96cb8ce7b82601339133bf2ecd28ac16c14bfbd62aef0b80d713580cf4cb3d69"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

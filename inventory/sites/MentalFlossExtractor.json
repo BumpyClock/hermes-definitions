@@ -1,0 +1,111 @@
+{
+  "cohort": "selector-string-2",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "a[data-vars-label*=\"authors\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".field-name-field-enhanced-authors"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        "small"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "article main"
+        ],
+        [
+          "div.field.field-name-body"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".date-display-single"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.mentalfloss.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:title\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1.title"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".title-group"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".inner"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 373471,
+      "path": "internal/fixtures/www.mentalfloss.com.html",
+      "sha256": "5738c2a3028b77d313b6212672015d254cd24042d3db8ddb252e1bc2273c0ca2"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwMentalflossComExtractor",
+  "id": "MentalFlossExtractor",
+  "source": {
+    "end_line": 56,
+    "line": 7,
+    "path": "internal/extractors/custom/www_mentalfloss_com.go",
+    "sha256": "bb1e1df5d1a3d4497c88bafaffd861d33e247044928e32d09e7eec18c1088189"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

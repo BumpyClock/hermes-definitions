@@ -1,0 +1,107 @@
+{
+  "cohort": "selector-string-3",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "span.author-card__details__name"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".pull-quote",
+        ".tag-cloud",
+        ".embed-asset",
+        ".below-entry",
+        ".entry-corrections",
+        "#suggested-story"
+      ],
+      "disable_default_cleaner": true,
+      "selectors": [
+        [
+          "div.entry__body"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:modified_time\"]"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h2.headline__subtitle"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.huffingtonpost.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1.headline__title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 84699,
+      "path": "internal/fixtures/www.huffingtonpost.com.html",
+      "sha256": "ff3bdc5fa307ee2e58e447c4a6d4e346cd1b0e4699976f0a5df99809bfeb12d4"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetHuffingtonPostExtractor",
+  "id": "HuffingtonPostExtractor",
+  "source": {
+    "end_line": 63,
+    "line": 61,
+    "path": "internal/extractors/custom/www_huffingtonpost_com.go",
+    "sha256": "a04591b3edc1b377ee47f02f9cfd6b01ef332f36f66ac54d849d21bbb86e9ce2"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

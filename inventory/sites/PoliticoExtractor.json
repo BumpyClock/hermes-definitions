@@ -1,0 +1,132 @@
+{
+  "cohort": "selector-string-4",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "div[itemprop=\"author\"] meta[itemprop=\"name\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".story-meta__authors .vcard"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".story-main-content .byline .vcard"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        "figcaption",
+        ".story-meta",
+        ".ad"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".story-text"
+        ],
+        [
+          ".story-main-content"
+        ],
+        [
+          ".story-core"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "datetime",
+          "Selector": "time[itemprop=\"datePublished\"]"
+        },
+        {
+          "Attribute": "datetime",
+          "Selector": ".story-meta__details time[datetime]"
+        },
+        {
+          "Attribute": "datetime",
+          "Selector": ".story-main-content .timestamp time[datetime]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:description\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.politico.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:title\"]"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 52986,
+      "path": "internal/fixtures/www.politico.com--test-case-2.html",
+      "sha256": "f3a708b0c2c538cfa4fa3e9019142bb20e6c5e1506d8cbab9c5b7e8f768327fe"
+    },
+    {
+      "bytes": 67434,
+      "path": "internal/fixtures/www.politico.com--test-case-3.html",
+      "sha256": "a44d10371b2e5551005e65be326cdfed0a91bc9021b30091ab33820845a6da9b"
+    },
+    {
+      "bytes": 68704,
+      "path": "internal/fixtures/www.politico.com.html",
+      "sha256": "fdafbed3145d13782630fd79541b1cba59f3f383a2440d114b60376f065a191f"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetPoliticoExtractor",
+  "id": "PoliticoExtractor",
+  "source": {
+    "end_line": 64,
+    "line": 7,
+    "path": "internal/extractors/custom/www_politico_com.go",
+    "sha256": "0ddac13c750a1893e1f16abcebf9f9e927729d4f6fa54025b1908674757c7e4e"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

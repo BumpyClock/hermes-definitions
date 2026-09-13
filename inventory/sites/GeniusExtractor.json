@@ -1,0 +1,77 @@
+{
+  "cohort": "selector-string-4",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h2 a"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".lyrics"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": null,
+    "Dek": null,
+    "Domain": "genius.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": null,
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 230458,
+      "path": "internal/fixtures/genius.com.html",
+      "sha256": "654068ee3033e30439d4f22fa14cdc91ebc366882a8bf1086daff627f0bb7471"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetGeniusExtractor",
+  "id": "GeniusExtractor",
+  "source": {
+    "end_line": 30,
+    "line": 28,
+    "path": "internal/extractors/custom/genius_com.go",
+    "sha256": "9cc3351e27a3e1884649645acf56ff17edd61084bd3297732fe196b7cc33552d"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": [
+    {
+      "line": 421,
+      "path": "internal/parser/custom_content_test.go",
+      "text": "<meta itemprop=\"page_data\" value='{\"song\":{\"release_date\":\"2026-09-07\",\"album\":{\"cover_art_url\":\"https://genius.com/image.jpg\"}}}'>"
+    },
+    {
+      "line": 422,
+      "path": "internal/parser/custom_content_test.go",
+      "text": "</head><body><h1>Song title</h1></body></html>`, \"https://genius.com/example\", &ParserOptions{ContentType: \"html\", Fallback: false})"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "cohort": "selector-string-2",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".blog-header__author-link"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".aside_author .title"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".blog__container"
+        ],
+        [
+          "article .post_content"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".post-info"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".blog-header__description"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".page-subtitle"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.prospectmagazine.co.uk",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".blog-header__title"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".page-title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 117994,
+      "path": "internal/fixtures/www.prospectmagazine.co.uk.html",
+      "sha256": "f257af3d6246c9a0278895dfe8a879ab3fee6edbe1e0aaa8a0564e5bcafa810b"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwProspectmagazineCoUkExtractor",
+  "id": "ProspectMagazineCoUkExtractor",
+  "source": {
+    "end_line": 58,
+    "line": 56,
+    "path": "internal/extractors/custom/www_prospectmagazine_co_uk.go",
+    "sha256": "61e8446c80acef3425340b9b3b98e451e26a87e7fc400ab6c5f8a902a70043ed"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

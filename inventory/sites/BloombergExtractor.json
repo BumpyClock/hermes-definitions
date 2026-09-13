@@ -1,0 +1,156 @@
+{
+  "cohort": "selector-string-4",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"parsely-author\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".byline-details__link"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".bydek"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".author"
+        },
+        {
+          "Attribute": "",
+          "Selector": "p[class*=\"author\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".inline-newsletter",
+        ".page-ad"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".article-body__content"
+        ],
+        [
+          ".body-content"
+        ],
+        [
+          "section.copy-block"
+        ],
+        [
+          ".body-copy"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "datetime",
+          "Selector": "time.published-at"
+        },
+        {
+          "Attribute": "datetime",
+          "Selector": "time[datetime]"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"date\"]"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"parsely-pub-date\"]"
+        },
+        {
+          "Attribute": "content",
+          "Selector": "meta[name=\"parsely-pub-date\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.bloomberg.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        },
+        {
+          "Attribute": "content",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".lede-headline"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1.article-title"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1[class^=\"headline\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1.lede-text-only__hed"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 173296,
+      "path": "internal/fixtures/www.bloomberg.com--graphics.html",
+      "sha256": "b5a1df224e6350e2aae58f956f54638a29f92627c50f11d046ce7697bbab026c"
+    },
+    {
+      "bytes": 76226,
+      "path": "internal/fixtures/www.bloomberg.com--news.html",
+      "sha256": "7970a082332e0b78a93460080a5fda5859e8ae5c1391f58822bf2be6abb2241c"
+    },
+    {
+      "bytes": 222335,
+      "path": "internal/fixtures/www.bloomberg.com.html",
+      "sha256": "5e8f27a25a2c0fd2fa9368a22b3e36738788ed7f717c04b271ec26711ba1c9de"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetBloombergExtractor",
+  "id": "BloombergExtractor",
+  "source": {
+    "end_line": 78,
+    "line": 7,
+    "path": "internal/extractors/custom/www_bloomberg_com.go",
+    "sha256": "9697f7850be7cb48b73bbb7385c4c3e4f008b7eebdd8a7a185c16ca796edfec7"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

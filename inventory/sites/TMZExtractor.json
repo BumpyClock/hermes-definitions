@@ -1,0 +1,106 @@
+{
+  "cohort": "selector-string-2",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "TMZ STAFF"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".lightbox-link"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".article__blocks"
+        ],
+        [
+          ".article-content"
+        ],
+        [
+          ".all-post-body"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".article__published-at"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".article-posted-date"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.tmz.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".post-title-breadcrumb"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".headline"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 115213,
+      "path": "internal/fixtures/www.tmz.com.html",
+      "sha256": "3448937bfa8ed2ede088d1d2233c807049842c1a3fdb0c472fa735517debc2c4"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetTMZExtractor",
+  "id": "TMZExtractor",
+  "source": {
+    "end_line": 54,
+    "line": 52,
+    "path": "internal/extractors/custom/www_tmz_com.go",
+    "sha256": "4fdad785d93a407f17dbd8266cbde337ddacaf14ff50b71fa103efd321136526"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

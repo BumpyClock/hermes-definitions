@@ -1,0 +1,103 @@
+{
+  "cohort": "selector-string-2",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "span.byline-name"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"author\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".label-comment"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "div.article-body__content"
+        ],
+        [
+          ".entry-container"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "time[datetime]"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"DC.date.issued\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.today.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1.article-hero-headline__htag"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1.entry-headline"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 95024,
+      "path": "internal/fixtures/www.today.com.html",
+      "sha256": "0bf68137924a990fa3bae6825f450ad5baf6660b6eaa52f6d833a2272a5f8cfe"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwTodayComExtractor",
+  "id": "TodayExtractor",
+  "source": {
+    "end_line": 53,
+    "line": 7,
+    "path": "internal/extractors/custom/www_today_com.go",
+    "sha256": "9076303f1181a5d391400ab81e659a2bc4c5bd2a65fa6dd6460d482588da998e"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

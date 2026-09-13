@@ -1,0 +1,99 @@
+{
+  "cohort": "selector-string-4",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"author\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".wp-block-techcrunch-newsletter",
+        "[class*=\"newsletter\"]",
+        "[class*=\"event-promo\"]"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".entry-content.wp-block-post-content"
+        ],
+        [
+          ".entry-content"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "techcrunch.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": [
+      "www.techcrunch.com"
+    ],
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "article h1"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [],
+  "function_bearing": false,
+  "getter": "GetTechCrunchExtractor",
+  "id": "TechCrunchExtractor",
+  "source": {
+    "end_line": 32,
+    "line": 6,
+    "path": "internal/extractors/custom/techcrunch_com.go",
+    "sha256": "1a51446a5cefde6b4c912a430a78b26a2e3ef8a4f1b8e53955d5a62220fe2df3"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": [
+    {
+      "line": 87,
+      "path": "internal/parser/popular_sites_test.go",
+      "text": "url:  \"https://techcrunch.com/2026/07/11/example/\","
+    }
+  ]
+}

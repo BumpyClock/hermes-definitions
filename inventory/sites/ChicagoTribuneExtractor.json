@@ -1,0 +1,86 @@
+{
+  "cohort": "selector-string-3",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "div.article_byline span:first-of-type"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "article"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "time"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.chicagotribune.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:title\"]"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 28010,
+      "path": "internal/fixtures/www.chicagotribune.com.html",
+      "sha256": "6f18ca16ff7fe170a940b1eace998925a05bcd83be649e850c05ac0c3d77ee15"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetChicagoTribuneExtractor",
+  "id": "ChicagoTribuneExtractor",
+  "source": {
+    "end_line": 49,
+    "line": 7,
+    "path": "internal/extractors/custom/www_chicagotribune_com.go",
+    "sha256": "1c54f25c0f2859a022e5732f4b9f3480e8bd302671b310656adca6c785c6d7d8"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

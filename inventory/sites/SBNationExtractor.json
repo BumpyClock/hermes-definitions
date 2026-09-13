@@ -1,0 +1,100 @@
+{
+  "cohort": "selector-string-4",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"author\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "div.c-entry-content"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "p.c-entry-summary.p-dek"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h2.c-entry-summary.p-dek"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.sbnation.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1.c-page-title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 184183,
+      "path": "internal/fixtures/www.sbnation.com.html",
+      "sha256": "e30ffba43c5ca29077fd5c88d7ef64853dbc1de10973b01985aac53bd227f745"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwSbnationComExtractor",
+  "id": "SBNationExtractor",
+  "source": {
+    "end_line": 52,
+    "line": 50,
+    "path": "internal/extractors/custom/www_sbnation_com.go",
+    "sha256": "1a8eef907e0a1b222e840e5e887422adff3fcf5a3ceb9185c26d67ebaa822c31"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

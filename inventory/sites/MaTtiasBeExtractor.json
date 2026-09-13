@@ -1,0 +1,95 @@
+{
+  "cohort": "attribute-text-cleanup-43",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"author\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".content"
+        ]
+      ],
+      "transforms": {
+        "h1": {
+          "kind": "function",
+          "line": 45,
+          "path": "internal/extractors/custom/ma_ttias_be.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.init.func5"
+        },
+        "h2": {
+          "kind": "function",
+          "line": 35,
+          "path": "internal/extractors/custom/ma_ttias_be.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.init.func4"
+        },
+        "ul": {
+          "kind": "function",
+          "line": 55,
+          "path": "internal/extractors/custom/ma_ttias_be.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.init.func6"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "ma.ttias.be",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": null,
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"twitter:title\"]"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 45893,
+      "path": "internal/fixtures/ma.ttias.be.html",
+      "sha256": "fc622c5233c8adc4bf9bd18dc03adb0362ce59e6ea5c1f628f17fc8d4bbca6fc"
+    }
+  ],
+  "function_bearing": true,
+  "getter": "GetMaTtiasBeExtractor",
+  "id": "MaTtiasBeExtractor",
+  "source": {
+    "end_line": 74,
+    "line": 72,
+    "path": "internal/extractors/custom/ma_ttias_be.go",
+    "sha256": "7e023f81ba52ee9b0f0a19b876d0fbaa018fd01cdcf78b0fd301ea5e0c4b6fed"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

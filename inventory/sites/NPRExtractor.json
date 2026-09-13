@@ -1,0 +1,124 @@
+{
+  "cohort": "selector-string-2",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "p.byline__name.byline__name--block"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        "div.enlarge_measure",
+        "b.toggle-caption",
+        "b.hide-caption",
+        ".ad-header",
+        ".ad-wrap",
+        "aside.ad-wrap",
+        "aside[id*='ad-']",
+        "button",
+        ".bucketwrap .toggle-caption",
+        ".bucketwrap .hide-caption"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".storytext"
+        ]
+      ],
+      "transforms": {
+        ".bucketwrap.image": {
+          "kind": "string",
+          "target_tag": "figure"
+        },
+        ".bucketwrap.image .credit-caption": {
+          "kind": "string",
+          "target_tag": "figcaption"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "datetime",
+          "Selector": ".dateblock time[datetime]"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"date\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.npr.org",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"twitter:image:src\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".storytitle"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 80230,
+      "path": "internal/fixtures/www.npr.org.html",
+      "sha256": "65b2962c936b8102dcc2ce8630030c350548c378dfffaeb4a1a9633f611bc4e1"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetNPRExtractor",
+  "id": "NPRExtractor",
+  "source": {
+    "end_line": 67,
+    "line": 7,
+    "path": "internal/extractors/custom/www_npr_org.go",
+    "sha256": "a1e4d68e7528f959cb783a98ecb59eb461f7df51b9c82b4a707a1a5ceded5b21"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": [
+    {
+      "line": 207,
+      "path": "internal/extractors/generic/description_test.go",
+      "text": "url:       \"https://www.npr.org\","
+    }
+  ]
+}

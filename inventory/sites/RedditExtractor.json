@@ -1,0 +1,148 @@
+{
+  "cohort": "attribute-text-cleanup-43",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "div[data-test-id=\"post-content\"] a[href*=\"user/\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".icon",
+        "span[id^=\"PostAwardBadges\"]",
+        "div a[data-test-id=\"comments-page-link-num-comments\"]"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "div[data-test-id=\"post-content\"] p"
+        ],
+        [
+          "div[data-test-id=\"post-content\"] a[target=\"_blank\"]:not([data-click-id=\"timestamp\"])",
+          "div[data-test-id=\"post-content\"] div[data-click-id=\"media\"]"
+        ],
+        [
+          "div[data-test-id=\"post-content\"] div[data-click-id=\"media\"]"
+        ],
+        [
+          "div[data-test-id=\"post-content\"] a"
+        ],
+        [
+          "div[data-test-id=\"post-content\"]"
+        ]
+      ],
+      "transforms": {
+        "div[role=\"img\"]": {
+          "kind": "function",
+          "line": 79,
+          "path": "internal/extractors/custom/www_reddit_com.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.transformRedditImagePreview"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "div[data-test-id=\"post-content\"] span[data-click-id=\"timestamp\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "div[data-test-id=\"post-content\"] a[data-click-id=\"timestamp\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.reddit.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "div[data-test-id=\"post-content\"] h1"
+        },
+        {
+          "Attribute": "",
+          "Selector": "div[data-test-id=\"post-content\"] h2"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 1581491,
+      "path": "internal/fixtures/www.reddit.com--embedded.html",
+      "sha256": "677da2b647e35587985c4e3f13cd7605734ae493164318576e0315b6db5f394a"
+    },
+    {
+      "bytes": 1656846,
+      "path": "internal/fixtures/www.reddit.com--external-image.html",
+      "sha256": "4c46b2af78cfb0762180ab186f0de07c37d88667ff85b4a10d4a3ee321e356b4"
+    },
+    {
+      "bytes": 2209446,
+      "path": "internal/fixtures/www.reddit.com--external-link.html",
+      "sha256": "200b63755f4fcef8fa6d4654ba7145464db7736e54814504752e5ebed47bffe5"
+    },
+    {
+      "bytes": 2656126,
+      "path": "internal/fixtures/www.reddit.com--image.html",
+      "sha256": "06fe98dd0972416e2d8460d2565af5e22cae6ee8f6930aa7ea8ff137468d0910"
+    },
+    {
+      "bytes": 160227,
+      "path": "internal/fixtures/www.reddit.com--title-only.html",
+      "sha256": "8ad10d8efef9075050ce22cb567accf0ca22ec2d4e5f1098f8dd061fad8e015b"
+    },
+    {
+      "bytes": 123175,
+      "path": "internal/fixtures/www.reddit.com--video.html",
+      "sha256": "6186e833a27a3bee3355df04eb5c9417f30da151ac1b84ed2a8eb22bf98fdd29"
+    },
+    {
+      "bytes": 1924999,
+      "path": "internal/fixtures/www.reddit.com.html",
+      "sha256": "f0f1413112900e8e34f38cc378cd4e9cd966678fac2e06ee0f3f590ccd30f944"
+    }
+  ],
+  "function_bearing": true,
+  "getter": "GetRedditExtractor",
+  "id": "RedditExtractor",
+  "source": {
+    "end_line": 101,
+    "line": 99,
+    "path": "internal/extractors/custom/www_reddit_com.go",
+    "sha256": "d69622774361944dd364e0456c827274acc8dc309b0a824b32a57f743ed2562a"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

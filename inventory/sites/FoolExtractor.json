@@ -1,0 +1,120 @@
+{
+  "cohort": "dom-noscript-44",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"author\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".author-inline .author-name"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        "#pitch"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".tailwind-article-body"
+        ],
+        [
+          ".article-content"
+        ]
+      ],
+      "transforms": {
+        ".caption": {
+          "kind": "string",
+          "target_tag": "figcaption"
+        },
+        ".caption img": {
+          "kind": "function",
+          "line": 73,
+          "path": "internal/extractors/custom/www_fool_com.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.transformFoolCaptionImg"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"date\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:description\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "header h2"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.fool.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 143324,
+      "path": "internal/fixtures/www.fool.com.html",
+      "sha256": "44b95bbe0ec2c3cdb569d83f92a3e2c6889eacb4fe53a8713cdb5fa5d3421981"
+    }
+  ],
+  "function_bearing": true,
+  "getter": "GetWwwFoolComExtractor",
+  "id": "FoolExtractor",
+  "source": {
+    "end_line": 69,
+    "line": 13,
+    "path": "internal/extractors/custom/www_fool_com.go",
+    "sha256": "b6dc327a908f8661a63994545545cffccfead073fcd91c4da5c1b15fb18e788e"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

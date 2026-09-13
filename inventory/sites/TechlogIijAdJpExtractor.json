@@ -1,0 +1,88 @@
+{
+  "cohort": "selector-string-1",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "a[rel=\"author\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".wp_social_bookmarking_light"
+      ],
+      "disable_default_cleaner": true,
+      "selectors": [
+        [
+          "div.entry-content"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "datetime",
+          "Selector": "time.entry-date"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "techlog.iij.ad.jp",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1.entry-title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 31575,
+      "path": "internal/fixtures/techlog.iij.ad.jp.html",
+      "sha256": "d6f283f8ed29f0686df9b7c93030457570dce52fed945c5e8b63d4bc1b70896c"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetTechlogIijAdJpExtractor",
+  "id": "TechlogIijAdJpExtractor",
+  "source": {
+    "end_line": 53,
+    "line": 51,
+    "path": "internal/extractors/custom/techlog_iij_ad_jp.go",
+    "sha256": "9514b1b2221ba4720f5130384e05c62f57868273f3d20cc02f1d948e55ece379"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

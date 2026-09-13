@@ -1,0 +1,96 @@
+{
+  "cohort": "selector-string-3",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"author\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".post__article"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".post__deck"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.fastcompany.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 45246,
+      "path": "internal/fixtures/www.fastcompany.com.html",
+      "sha256": "a03f5c02a6cd746ac27f258827577fc478b0ab1556668306becad241940085c9"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwFastcompanyComExtractor",
+  "id": "FastCompanyExtractor",
+  "source": {
+    "end_line": 55,
+    "line": 7,
+    "path": "internal/extractors/custom/www_fastcompany_com.go",
+    "sha256": "7f2642c62420f07eb2813972a5a0545594dcdee44b854d12d17599b33fb3b0bb"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

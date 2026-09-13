@@ -1,0 +1,96 @@
+{
+  "cohort": "selector-string-1",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".story__info .story__info__item:first-child"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".story__content"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".story__info"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".story__subhead"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.dmagazine.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "href",
+          "Selector": "article figure a:first-child"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1.story__title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 34366,
+      "path": "internal/fixtures/www.dmagazine.com.html",
+      "sha256": "8396189742b9e53561e92e5625d5a84c8b804652d00965014dc0825808fb36aa"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwDmagazineComExtractor",
+  "id": "DMagazineExtractor",
+  "source": {
+    "end_line": 56,
+    "line": 7,
+    "path": "internal/extractors/custom/www_dmagazine_com.go",
+    "sha256": "5ecf1fce0b04dd313047a7620ccaa4425e86353ea4e21aeb059579fde74e47ed"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

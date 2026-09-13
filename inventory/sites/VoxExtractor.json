@@ -1,0 +1,136 @@
+{
+  "cohort": "dom-noscript-44",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"author\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".duet--article--block-placement",
+        ".duet--article--related",
+        ".duet--cta--newsletter",
+        "form",
+        ".duet--article--share-buttons",
+        ".duet--article--article-pullquote",
+        ".duet--media--caption"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".duet--article--article-body-component"
+        ],
+        [
+          "div[id*='zephr-anchor']"
+        ],
+        [
+          ".duet--layout--entry-body"
+        ],
+        [
+          "figure.e-image--hero",
+          ".c-entry-content"
+        ],
+        [
+          ".c-entry-content"
+        ]
+      ],
+      "transforms": {
+        "figure .e-image__image noscript": {
+          "kind": "function",
+          "line": 85,
+          "path": "internal/extractors/custom/www_vox_com.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.transformVoxNoscriptImage"
+        },
+        "figure .e-image__meta": {
+          "kind": "string",
+          "target_tag": "figcaption"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "p[class*=\"h74scyi\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".p-dek"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.vox.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1[class*=\"h74scy\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1.c-page-title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 124956,
+      "path": "internal/fixtures/www.vox.com.html",
+      "sha256": "43cd789844e422045d82394fdcfc9e6de957105aa3f31888bf2e97f2dff713f5"
+    }
+  ],
+  "function_bearing": true,
+  "getter": "GetVoxExtractor",
+  "id": "VoxExtractor",
+  "source": {
+    "end_line": 106,
+    "line": 104,
+    "path": "internal/extractors/custom/www_vox_com.go",
+    "sha256": "5749475e22ee630f3485a93da8ee54f7b852a28e15e1399c39d6c407200d8cf4"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

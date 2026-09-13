@@ -1,0 +1,100 @@
+{
+  "cohort": "selector-string-2",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".authorText"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".bylineDetails"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".story"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "datetime",
+          "Selector": ".timeStamp[datetime]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".deck"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.cbc.ca",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 55347,
+      "path": "internal/fixtures/www.cbc.ca.html",
+      "sha256": "96fe89b08143695db35eae0994f9543565b5a098c82b4c9db42dff683df2fb0c"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwCbcCaExtractor",
+  "id": "CbcCaExtractor",
+  "source": {
+    "end_line": 52,
+    "line": 50,
+    "path": "internal/extractors/custom/www_cbc_ca.go",
+    "sha256": "7e26494baa41df49621b15c57c2f8f9109a79445a2b46fd359a17514b2b17c75"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

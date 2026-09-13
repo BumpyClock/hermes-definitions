@@ -1,0 +1,127 @@
+{
+  "cohort": "dom-noscript-44",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"author\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".pb-author-name"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".interstitial-link",
+        ".newsletter-inline-unit"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".article-body"
+        ]
+      ],
+      "transforms": {
+        ".pb-caption": {
+          "kind": "string",
+          "target_tag": "figcaption"
+        },
+        "div.inline-content": {
+          "kind": "function",
+          "line": 50,
+          "path": "internal/extractors/custom/www_washingtonpost_com.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.GetWashingtonPostExtractor.func1"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "content",
+          "Selector": ".author-timestamp[itemprop=\"datePublished\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.washingtonpost.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "#topper-text-elems h1"
+        },
+        {
+          "Attribute": "",
+          "Selector": "article header h1"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        },
+        {
+          "Attribute": "",
+          "Selector": "#topper-headline-wrapper"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 40722,
+      "path": "internal/fixtures/www.washingtonpost.com.html",
+      "sha256": "3e7617177701210537af7d057814fa77e4817a8789b28a1fd43eb87daaf2dc1f"
+    }
+  ],
+  "function_bearing": true,
+  "getter": "GetWashingtonPostExtractor",
+  "id": "WashingtonPostExtractor",
+  "source": {
+    "end_line": 75,
+    "line": 11,
+    "path": "internal/extractors/custom/www_washingtonpost_com.go",
+    "sha256": "33983030ed90aa0ce1a482cdb84e4ec1e945a99628d61120b7c0bcdde405428d"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": [
+    {
+      "line": 39,
+      "path": "internal/parser/benchmark_test.go",
+      "text": "\"www.washingtonpost.com.html\","
+    },
+    {
+      "line": 69,
+      "path": "internal/parser/popular_sites_test.go",
+      "text": "url:  \"https://www.washingtonpost.com/nation/2026/07/11/example/\","
+    }
+  ]
+}

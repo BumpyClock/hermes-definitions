@@ -1,0 +1,111 @@
+{
+  "cohort": "selector-string-3",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".main-author-card h3"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:author\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".entity-name a[rel=author]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".entity-image"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".article-content__body"
+        ],
+        [
+          "header figure",
+          ".prose"
+        ],
+        [
+          ".prose"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".base-main-card__metadata"
+        },
+        {
+          "Attribute": "datetime",
+          "Selector": "time[itemprop=\"datePublished\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.linkedin.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".article-title"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 96510,
+      "path": "internal/fixtures/www.linkedin.com.html",
+      "sha256": "66d1805430eff1575d90401555bede20f81276ce2e1fb0be84bda17be3f5df05"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetLinkedInExtractor",
+  "id": "LinkedInExtractor",
+  "source": {
+    "end_line": 57,
+    "line": 55,
+    "path": "internal/extractors/custom/www_linkedin_com.go",
+    "sha256": "c8fa6db2e417fca845b3ac4f7e154abf0a450d60e500493a4f8cecd1a51d8050"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

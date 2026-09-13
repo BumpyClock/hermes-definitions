@@ -1,0 +1,102 @@
+{
+  "cohort": "selector-string-1",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"author\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".ad-notice-small"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "div.article-sharing.top + div"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"DC.date.issued\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".subtitle"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.westernjournalism.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "title"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1.entry-title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 165809,
+      "path": "internal/fixtures/www.westernjournalism.com.html",
+      "sha256": "3711569a90b4e5fb7afe15a706e15f2da2fcec0cc53496bd5f5142ee7b3937c1"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwWesternjournalismComExtractor",
+  "id": "WesternJournalismExtractor",
+  "source": {
+    "end_line": 56,
+    "line": 7,
+    "path": "internal/extractors/custom/www_westernjournalism_com.go",
+    "sha256": "7112c6dad9e2642ee7f14b5062fae827d81d5eb47cc5aacf6fb627bd76f1551f"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

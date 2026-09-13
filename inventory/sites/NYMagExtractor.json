@@ -1,0 +1,122 @@
+{
+  "cohort": "dom-noscript-44",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".by-authors"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".lede-feature-author"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".ad",
+        ".single-related-story"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "div.article-content"
+        ],
+        [
+          "section.body"
+        ],
+        [
+          "article.article"
+        ]
+      ],
+      "transforms": {
+        "h1": {
+          "kind": "string",
+          "target_tag": "h2"
+        },
+        "noscript": {
+          "kind": "function",
+          "line": 73,
+          "path": "internal/extractors/custom/nymag_com.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.transformNYMagNoscript"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "datetime",
+          "Selector": "time.article-timestamp[datetime]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "time.article-timestamp"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".lede-feature-teaser"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "nymag.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": null,
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1.lede-feature-title"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1.headline-primary"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 343002,
+      "path": "internal/fixtures/nymag.com.html",
+      "sha256": "d5490bf257ec813125cfb215347bd09c65dd4710eaab257156a56fbc3d494f82"
+    }
+  ],
+  "function_bearing": true,
+  "getter": "GetNYMagExtractor",
+  "id": "NYMagExtractor",
+  "source": {
+    "end_line": 102,
+    "line": 100,
+    "path": "internal/extractors/custom/nymag_com.go",
+    "sha256": "7f2a4370f8aaf81fa58e2d4639b6085aa21befd50ef2102072fda2ccd42b5895"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

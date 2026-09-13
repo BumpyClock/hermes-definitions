@@ -1,0 +1,103 @@
+{
+  "cohort": "selector-string-2",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"parsely-author\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".intro",
+        "blockquote"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "#article-body"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"description\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.androidcentral.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1.main-title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 74315,
+      "path": "internal/fixtures/www.androidcentral.com.html",
+      "sha256": "85c128862a133008a0f2210c03c45f03541847a686bd4e6fdff52c0ccedd3dc1"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwAndroidcentralComExtractor",
+  "id": "WwwAndroidcentralComExtractor",
+  "source": {
+    "end_line": 58,
+    "line": 56,
+    "path": "internal/extractors/custom/www_androidcentral_com.go",
+    "sha256": "e238be22167d70b43ac6f734ec36a7ca3dc91b0986adb2511305b26db93d3a63"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

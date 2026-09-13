@@ -1,0 +1,95 @@
+{
+  "cohort": "selector-string-2",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"qc:author\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".entry-content"
+        ]
+      ],
+      "transforms": {
+        "div.image": {
+          "kind": "string",
+          "target_tag": "figure"
+        },
+        "div.image .wp-media-credit": {
+          "kind": "string",
+          "target_tag": "figcaption"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "uproxx.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "div.entry-header h1"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 61229,
+      "path": "internal/fixtures/uproxx.com.html",
+      "sha256": "101822b41b09b58c7bc1a869b650b0cb828f215b5342c5fee15fd9052f9381be"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetUproxxExtractor",
+  "id": "UproxxExtractor",
+  "source": {
+    "end_line": 51,
+    "line": 49,
+    "path": "internal/extractors/custom/uproxx_com.go",
+    "sha256": "bb4db2539d511fe484b8945db4a1738514b11986f281e19a8a8684b5ec5c5022"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

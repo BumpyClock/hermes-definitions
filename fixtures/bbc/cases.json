@@ -1,0 +1,29 @@
+{
+  "synthetic": true,
+  "source_commit": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "source_file": "BumpyClock/hermes/internal/parser/popular_sites_test.go",
+  "cases": [
+    {
+      "file": "semantic-article.html",
+      "seed": "TestPopularSiteExtractors/bbc semantic article boundary",
+      "url": "https://www.bbc.com/news/articles/example",
+      "title": "BBC current headline",
+      "author": "Ada Reporter",
+      "date_published": "2026-07-01",
+      "lead_image_url": "https://www.bbc.com/photo.jpg",
+      "exactly_once": ["Opening BBC paragraph", "Final BBC paragraph"],
+      "exclude": ["Wrong related story", "Share"]
+    },
+    {
+      "file": "nested-recommendation.html",
+      "seed": "TestBBCExtractorExcludesNestedRecommendationArticle",
+      "url": "https://www.bbc.com/news/articles/example",
+      "title": "BBC nested recommendation headline",
+      "author": "Ada Reporter",
+      "date_published": "2026-07-01",
+      "lead_image_url": "https://www.bbc.com/photo.jpg",
+      "exactly_once": ["The main BBC report", "The final BBC report paragraph"],
+      "exclude": ["Nested recommendation article", "Share"]
+    }
+  ]
+}

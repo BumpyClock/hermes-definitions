@@ -1,0 +1,102 @@
+{
+  "cohort": "selector-string-2",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".writer.writer-name"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".arti-giga"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".arti-content"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "datetime",
+          "Selector": "header time"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"description\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".arti-summary"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.rbbtoday.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 88098,
+      "path": "internal/fixtures/www.rbbtoday.com.html",
+      "sha256": "ac91fb22434638fe59c4a3cf4a28a308516dfdb17981962a4599b1eb2691d51b"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwRbbtodayComExtractor",
+  "id": "RbbtodayComExtractor",
+  "source": {
+    "end_line": 57,
+    "line": 55,
+    "path": "internal/extractors/custom/www_rbbtoday_com.go",
+    "sha256": "37d525a1d9d3780e3a0a18fdd872fc06751dda09c155235561fe3ad416d87280"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

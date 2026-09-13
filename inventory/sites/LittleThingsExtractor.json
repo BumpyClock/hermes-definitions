@@ -1,0 +1,90 @@
+{
+  "cohort": "selector-string-4",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "div[class^=\"PostHeader__ScAuthorNameSection\"]"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"author\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "section[class*=\"PostMainArticle\"]"
+        ],
+        [
+          ".mainContentIntro"
+        ],
+        [
+          ".content-wrapper"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": null,
+    "Dek": null,
+    "Domain": "www.littlethings.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1[class*=\"PostHeader\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1.post-title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 1421711,
+      "path": "internal/fixtures/www.littlethings.com.html",
+      "sha256": "d67af96c58f0eae7c8757d5bf83dfa7dda50dd8e08b93c3ba263289851511dd7"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetLittleThingsExtractor",
+  "id": "LittleThingsExtractor",
+  "source": {
+    "end_line": 43,
+    "line": 41,
+    "path": "internal/extractors/custom/www_littlethings_com.go",
+    "sha256": "c5b3ff92907d72a08196224ca83026c10b6d57a05ed4f0e4443358b42de67745"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

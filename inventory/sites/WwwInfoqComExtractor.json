@@ -1,0 +1,96 @@
+{
+  "cohort": "selector-string-4",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "div.widget.article__authors"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": true,
+      "selectors": [
+        [
+          "div.article__data"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".article__readTime.date"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:description\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.infoq.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1.heading"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 112013,
+      "path": "internal/fixtures/www.infoq.com.html",
+      "sha256": "143fe6ee16f868b53cd3d1c42c279bde1725a502bce82fe16f15f3983919c486"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwInfoqComExtractor",
+  "id": "WwwInfoqComExtractor",
+  "source": {
+    "end_line": 55,
+    "line": 53,
+    "path": "internal/extractors/custom/www_infoq_com.go",
+    "sha256": "36b0fde74fc3585bcae952c332de9bc61c01f5ab0597bb23063bde58e1bb163e"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

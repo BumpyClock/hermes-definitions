@@ -1,0 +1,66 @@
+{
+  "cohort": "selector-string-3",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "div.highwire-citation-biorxiv-article-top > div.highwire-cite-authors"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "div#abstract-1"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": null,
+    "Dek": null,
+    "Domain": "biorxiv.org",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": null,
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1#page-title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 81722,
+      "path": "internal/fixtures/biorxiv.org.html",
+      "sha256": "8ce7782be33a46f1cba1025cc67a36ffa20c1addda2b2ee3227a0c69b511d82e"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetBiorxivOrgExtractor",
+  "id": "BiorxivOrgExtractor",
+  "source": {
+    "end_line": 33,
+    "line": 31,
+    "path": "internal/extractors/custom/biorxiv_org.go",
+    "sha256": "a374d6d8198f56b26141a2d85479294f1c7bcc54d6ec3d5fe2dd6699059459b9"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

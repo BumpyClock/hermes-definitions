@@ -1,0 +1,108 @@
+{
+  "cohort": "selector-string-1",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".ArticleAuthor-nameText"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".author-name"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".article"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[itemprop=\"datePublished\"]"
+        }
+      ],
+      "timezone": "UTC"
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".Article-subline"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".article-subline"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.cbssports.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".Article-headline"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".article-headline"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 240931,
+      "path": "internal/fixtures/www.cbssports.com.html",
+      "sha256": "c87563349b2e965f8dc2d05ee6781275f28c9a176dc26c802b49282c4020754e"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwCbssportsComExtractor",
+  "id": "CBSSportsExtractor",
+  "source": {
+    "end_line": 55,
+    "line": 53,
+    "path": "internal/extractors/custom/www_cbssports_com.go",
+    "sha256": "7a86a8f3bb39b1222e1937926aac065dc3154f769a256b95f3e9fe645eb873ce"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

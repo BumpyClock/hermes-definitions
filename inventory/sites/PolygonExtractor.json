@@ -1,0 +1,242 @@
+{
+  "cohort": "dom-noscript-44",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".article-author"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".meta_txt.article-author"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".w-author-name .article-author"
+        },
+        {
+          "Attribute": "content",
+          "Selector": "meta[name=\"author\"]"
+        },
+        {
+          "Attribute": "content",
+          "Selector": "meta[property=\"article:author\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".w-directory-warning",
+        "nav.article-directory-sidenav",
+        ".sidenav-level",
+        ".sidenav-item",
+        ".directory-warning",
+        "a.directory-warning",
+        ".article-footer-nav",
+        ".pagination-nav",
+        ".article-nav",
+        "[class*='ad-']",
+        "[id*='ad-']",
+        ".advertisement",
+        ".promo",
+        ".social-share",
+        ".share-buttons",
+        ".w-sharing-copy",
+        ".follow-container",
+        ".w-follow-btn",
+        ".w-like-btn",
+        ".option-btn",
+        ".btn-fab",
+        ".disqus-load-btn",
+        ".w-related-content",
+        ".w-header-related-feed",
+        ".section-header",
+        ".section-title",
+        ".display-card-title",
+        ".display-card",
+        ".w-display-card-content",
+        ".article-header-complementary",
+        ".sidebar-tabs",
+        ".tabs-ul",
+        ".tabs-header",
+        ".tab-content",
+        ".sidebar-el-content",
+        ".related-articles",
+        ".newsletter-signup",
+        ".email-signup",
+        ".w-heading-options",
+        ".w-header-user-box",
+        ".user-box-title",
+        ".article-header-data",
+        ".comments-section",
+        ".comment-form",
+        "#disqus_thread",
+        ".article-comments",
+        "[class*='trending']",
+        "[class*='popular']",
+        "[id*='trending']",
+        "[id*='popular']",
+        ".article-header-complementary",
+        ".w-login",
+        ".valnet-login",
+        ".w-valnet-login",
+        "[id*='login']",
+        ".article-header-bg",
+        ".thread-option",
+        ".fab-label",
+        "script",
+        "noscript",
+        "style",
+        "img.c-dynamic-image"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "#article-body .content-block-regular",
+          "#article-body > p",
+          "#article-body > h1",
+          "#article-body > h2",
+          "#article-body > h3",
+          "#article-body > h4",
+          "#article-body > figure",
+          "#article-body > blockquote",
+          "#article-body > img"
+        ],
+        [
+          "#article-body"
+        ],
+        [
+          ".article-body"
+        ],
+        [
+          "article.w-article .article-body"
+        ],
+        [
+          "main .w-article"
+        ],
+        [
+          ".entry-content"
+        ],
+        [
+          ".post-content"
+        ]
+      ],
+      "transforms": {
+        "noscript": {
+          "kind": "function",
+          "line": 92,
+          "path": "internal/extractors/custom/www_polygon_com.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.init.func18"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "content",
+          "Selector": "meta[property=\"article:published_time\"]"
+        },
+        {
+          "Attribute": "content",
+          "Selector": "meta[property=\"og:published_time\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".article-date"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".meta_txt.article-date"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "header p"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".article-excerpt"
+        },
+        {
+          "Attribute": "content",
+          "Selector": "meta[name=\"description\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.polygon.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "content",
+          "Selector": "meta[property=\"og:image\"]"
+        },
+        {
+          "Attribute": "content",
+          "Selector": "meta[name=\"twitter:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1.article-header-title"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1[class*='article']"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        },
+        {
+          "Attribute": "content",
+          "Selector": "meta[property=\"og:title\"]"
+        },
+        {
+          "Attribute": "content",
+          "Selector": "meta[name=\"twitter:title\"]"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [],
+  "function_bearing": true,
+  "getter": "GetPolygonExtractor",
+  "id": "PolygonExtractor",
+  "source": {
+    "end_line": 203,
+    "line": 201,
+    "path": "internal/extractors/custom/www_polygon_com.go",
+    "sha256": "29d71cf1417414241d01ed28439837fc3ecff1e8fd164957ff9735277a36b54a"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

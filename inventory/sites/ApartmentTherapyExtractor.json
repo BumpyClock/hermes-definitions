@@ -1,0 +1,93 @@
+{
+  "cohort": "complex-exception-45",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".PostByline__name"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "div.post__content"
+        ]
+      ],
+      "transforms": {
+        "div[data-render-react-id=\"images/LazyPicture\"]": {
+          "kind": "function",
+          "line": 62,
+          "path": "internal/extractors/custom/www_apartmenttherapy_com.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.transformApartmentTherapyLazyPicture"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "datetime",
+          "Selector": ".PostByline__timestamp[datetime]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.apartmenttherapy.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1.headline"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 96100,
+      "path": "internal/fixtures/www.apartmenttherapy.com.html",
+      "sha256": "20a185cd25bd1b3cf6b19b3b2e9c13709bd2f7792521eb0faa3576f86f542b50"
+    }
+  ],
+  "function_bearing": true,
+  "getter": "GetWwwApartmenttherapyComExtractor",
+  "id": "ApartmentTherapyExtractor",
+  "source": {
+    "end_line": 58,
+    "line": 13,
+    "path": "internal/extractors/custom/www_apartmenttherapy_com.go",
+    "sha256": "993fc43034968223276c20607ae5145672ed049265f819ef97875b8b4370b05f"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

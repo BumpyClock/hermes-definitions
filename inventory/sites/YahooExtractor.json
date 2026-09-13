@@ -1,0 +1,88 @@
+{
+  "cohort": "selector-string-3",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "span.provider-name"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".figure-caption"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".content-canvas"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "datetime",
+          "Selector": "time.date[datetime]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.yahoo.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "header.canvas-header"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 192308,
+      "path": "internal/fixtures/www.yahoo.com.html",
+      "sha256": "55c194292ba534ab4f12a81a87810c13a25e0a0e3c45e66a979d1ecf821d6299"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwYahooComExtractor",
+  "id": "YahooExtractor",
+  "source": {
+    "end_line": 49,
+    "line": 7,
+    "path": "internal/extractors/custom/www_yahoo_com.go",
+    "sha256": "d899acea9f624a2b91239e59d1ca05f74fb56974e7b51a06a8a8d6608cc31868"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

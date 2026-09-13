@@ -1,0 +1,120 @@
+{
+  "cohort": "attribute-text-cleanup-43",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"author\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".media__video--thumbnail",
+          ".zn-body-text"
+        ],
+        [
+          ".zn-body-text"
+        ],
+        [
+          "div[itemprop=\"articleBody\"]"
+        ]
+      ],
+      "transforms": {
+        ".media__video--thumbnail": {
+          "kind": "string",
+          "target_tag": "figure"
+        },
+        ".zn-body__paragraph": {
+          "kind": "function",
+          "line": 66,
+          "path": "internal/extractors/custom/www_cnn_com.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.GetCNNExtractor.func2"
+        },
+        ".zn-body__paragraph, .el__leafmedia--sourced-paragraph": {
+          "kind": "function",
+          "line": 53,
+          "path": "internal/extractors/custom/www_cnn_com.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.GetCNNExtractor.func1"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.cnn.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1.pg-headline"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 252455,
+      "path": "internal/fixtures/www.cnn.com.html",
+      "sha256": "727c795927a4c6b4f8ef3a9fff89dd55a6bd76c9f7dc8f0fee94b885fe8c999f"
+    }
+  ],
+  "function_bearing": true,
+  "getter": "GetCNNExtractor",
+  "id": "CNNExtractor",
+  "source": {
+    "end_line": 90,
+    "line": 13,
+    "path": "internal/extractors/custom/www_cnn_com.go",
+    "sha256": "a43d02ae4667f7545d2d79c0ae647a6a1c647a0eb5f5a59b157cbb50b9f4666a"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": [
+    {
+      "line": 40,
+      "path": "internal/parser/benchmark_test.go",
+      "text": "\"www.cnn.com.html\","
+    }
+  ]
+}

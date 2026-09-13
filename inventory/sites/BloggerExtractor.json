@@ -1,0 +1,137 @@
+{
+  "cohort": "selector-string-1",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".post-author-name"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".post-content noscript"
+        ]
+      ],
+      "transforms": {
+        "noscript": {
+          "kind": "string",
+          "target_tag": "div"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "span.publishdate"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "blogspot.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": null,
+    "NextPageURL": null,
+    "SupportedDomains": [
+      "www.blogspot.com",
+      "blogspot.co.uk",
+      "blogspot.ca",
+      "blogspot.de",
+      "blogspot.fr",
+      "blogspot.jp",
+      "blogspot.in",
+      "blogspot.com.au",
+      "blogspot.com.br",
+      "blogspot.mx"
+    ],
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".post h2.title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [],
+  "function_bearing": false,
+  "getter": "GetBloggerExtractor",
+  "id": "BloggerExtractor",
+  "source": {
+    "end_line": 50,
+    "line": 48,
+    "path": "internal/extractors/custom/blogger.go",
+    "sha256": "907df9c75c50f985f9ebe1b1b458075edd83785511ea51138ee56ca8fa8c8693"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": [
+    {
+      "line": 6,
+      "path": "internal/extractors/custom/blogger_test.go",
+      "text": "blogger := GetBloggerExtractor()"
+    },
+    {
+      "line": 11,
+      "path": "internal/extractors/custom/blogger_test.go",
+      "text": "if registered[\"BloggerExtractor\"] != blogger {"
+    },
+    {
+      "line": 18,
+      "path": "internal/extractors/custom/blogger_test.go",
+      "text": "for _, domain := range []string{\"blogspot.com\", \"www.blogspot.com\", \"blogspot.co.uk\"} {"
+    },
+    {
+      "line": 50,
+      "path": "internal/extractors/custom/custom_test.go",
+      "text": "func TestBloggerExtractor(t *testing.T) {"
+    },
+    {
+      "line": 51,
+      "path": "internal/extractors/custom/custom_test.go",
+      "text": "extractor := GetBloggerExtractor()"
+    },
+    {
+      "line": 54,
+      "path": "internal/extractors/custom/custom_test.go",
+      "text": "if extractor.Domain != \"blogspot.com\" {"
+    },
+    {
+      "line": 55,
+      "path": "internal/extractors/custom/custom_test.go",
+      "text": "t.Errorf(\"Expected domain 'blogspot.com', got %s\", extractor.Domain)"
+    },
+    {
+      "line": 64,
+      "path": "internal/extractors/custom/custom_test.go",
+      "text": "\"www.blogspot.com\","
+    },
+    {
+      "line": 65,
+      "path": "internal/extractors/custom/custom_test.go",
+      "text": "\"blogspot.co.uk\","
+    },
+    {
+      "line": 66,
+      "path": "internal/extractors/custom/custom_test.go",
+      "text": "\"blogspot.ca\","
+    }
+  ]
+}

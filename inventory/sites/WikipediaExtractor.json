@@ -1,0 +1,85 @@
+{
+  "cohort": "complex-exception-45",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".mw-editsection",
+        "figure tr, figure td, figure tbody",
+        "#toc",
+        ".navbox"
+      ],
+      "disable_default_cleaner": true,
+      "selectors": [
+        [
+          "#mw-content-text"
+        ]
+      ],
+      "transforms": {
+        ".infobox": {
+          "kind": "string",
+          "target_tag": "figure"
+        },
+        ".infobox caption": {
+          "kind": "string",
+          "target_tag": "figcaption"
+        },
+        ".infobox img": {
+          "kind": "function",
+          "line": 63,
+          "path": "internal/extractors/custom/wikipedia_org.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.transformWikipediaInfoboxImg"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "#footer-info-lastmod"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "wikipedia.org",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": null,
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h2.title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [],
+  "function_bearing": true,
+  "getter": "GetWikipediaExtractor",
+  "id": "WikipediaExtractor",
+  "source": {
+    "end_line": 86,
+    "line": 77,
+    "path": "internal/extractors/custom/wikipedia_org.go",
+    "sha256": "f3530a3de05ed788a1e11185352731c5450efaaa4789bdde7de12e06be1fd9ac"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

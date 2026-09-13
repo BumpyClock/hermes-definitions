@@ -1,0 +1,95 @@
+{
+  "cohort": "dom-noscript-44",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "section.author h2"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        "figcaption"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "div.a-article-grid__main.pmc-a-grid article.pmc-a-grid-item"
+        ]
+      ],
+      "transforms": {
+        ".embed-twitter": {
+          "kind": "function",
+          "line": 60,
+          "path": "internal/extractors/custom/deadline_com.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.transformDeadlineTwitterEmbed"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "deadline.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 175890,
+      "path": "internal/fixtures/deadline.com.html",
+      "sha256": "ee6b2227dcc56e6b9b2a8aa6e18b3b17d5fe82d9478df2720d3a5c9e9f5e2edc"
+    }
+  ],
+  "function_bearing": true,
+  "getter": "GetDeadlineExtractor",
+  "id": "DeadlineExtractor",
+  "source": {
+    "end_line": 76,
+    "line": 74,
+    "path": "internal/extractors/custom/deadline_com.go",
+    "sha256": "d988cfc8ee150be3519a5470f59fbebdb3134ef7ef6078e25ea318a84e092d5b"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

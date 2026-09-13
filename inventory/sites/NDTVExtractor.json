@@ -1,0 +1,112 @@
+{
+  "cohort": "dom-noscript-44",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "span[itemprop=\"author\"] span[itemprop=\"name\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".highlghts_Wdgt",
+        ".ins_instory_dv_caption",
+        "input",
+        "._world-wrapper .mt20"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "div[itemprop=\"articleBody\"]"
+        ]
+      ],
+      "transforms": {
+        ".place_cont": {
+          "kind": "function",
+          "line": 70,
+          "path": "internal/extractors/custom/www_ndtv_com.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.transformNDTVDateline"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "content",
+          "Selector": "span[itemprop=\"dateModified\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h2"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.ndtv.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:title\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1.entry-title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 113387,
+      "path": "internal/fixtures/www.ndtv.com.html",
+      "sha256": "22fa53aa9a8fc24c18f866067a04723710639270bfed5783a81be151a8e458fd"
+    }
+  ],
+  "function_bearing": true,
+  "getter": "GetWwwNdtvComExtractor",
+  "id": "NDTVExtractor",
+  "source": {
+    "end_line": 66,
+    "line": 11,
+    "path": "internal/extractors/custom/www_ndtv_com.go",
+    "sha256": "840de885f7ab32b8c6bbcf9d11fd479ce3578a98ab6904ecb506a4ae30613ba7"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

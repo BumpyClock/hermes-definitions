@@ -1,0 +1,137 @@
+{
+  "cohort": "dom-noscript-44",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "a[data-action=\"user/username\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "byline__author"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"author\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".instapaper_ignore",
+        ".suplist_list_hide .buzz_superlist_item .buzz_superlist_number_inline",
+        ".share-box",
+        ".print",
+        ".js-inline-share-bar",
+        ".js-ad-placement"
+      ],
+      "disable_default_cleaner": true,
+      "selectors": [
+        [
+          "div[class^=\"featureimage_featureImageWrapper\"]",
+          ".js-subbuzz-wrapper"
+        ],
+        [
+          ".js-subbuzz-wrapper"
+        ]
+      ],
+      "transforms": {
+        "div.longform_custom_header_media": {
+          "kind": "function",
+          "line": 88,
+          "path": "internal/extractors/custom/www_buzzfeed_com.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.transformBuzzFeedHeaderMedia"
+        },
+        "figure.longform_custom_header_media .longform_header_image_source": {
+          "kind": "string",
+          "target_tag": "figcaption"
+        },
+        "h2": {
+          "kind": "string",
+          "target_tag": "b"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "datetime",
+          "Selector": "time[datetime]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".embed-headline-description"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.buzzfeed.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": [
+      "www.buzzfeednews.com"
+    ],
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1.embed-headline-title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 146088,
+      "path": "internal/fixtures/www.buzzfeed.com--splash.html",
+      "sha256": "b43c6daab4af726b0669435a2dc03e1715db87bd51b5b867508da6835d3535c2"
+    },
+    {
+      "bytes": 123769,
+      "path": "internal/fixtures/www.buzzfeed.com.html",
+      "sha256": "c63421640325090f52d10c822a64d49e17f21c428cd07ed83fb7fb1198b339a5"
+    }
+  ],
+  "function_bearing": true,
+  "getter": "GetBuzzFeedExtractor",
+  "id": "BuzzFeedExtractor",
+  "source": {
+    "end_line": 111,
+    "line": 109,
+    "path": "internal/extractors/custom/www_buzzfeed_com.go",
+    "sha256": "8a3ed31cf26f4e0ff80ed6f7c44a438658133dbbdc387b74d3cec4ab5032216b"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

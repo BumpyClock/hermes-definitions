@@ -1,0 +1,79 @@
+{
+  "cohort": "selector-string-2",
+  "configuration": {
+    "Author": null,
+    "Content": {
+      "clean": [
+        "#pankuzu",
+        "#side"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "#main_area"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": null,
+    "Dek": null,
+    "Domain": "www.jnsa.org",
+    "Excerpt": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:description\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "#wgtitle h2"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 24947,
+      "path": "internal/fixtures/www.jnsa.org.html",
+      "sha256": "e5b485ba5c8913e78155a234422ba9b0b3ff3528dfefb8e3aeebf9d1536a2021"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwJnsaOrgExtractor",
+  "id": "WwwJnsaOrgExtractor",
+  "source": {
+    "end_line": 46,
+    "line": 44,
+    "path": "internal/extractors/custom/www_jnsa_org.go",
+    "sha256": "cd5f2af59ba0b9566ae3aeb1ce9a2ea045f17e3103d9b293f50903d333087705"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

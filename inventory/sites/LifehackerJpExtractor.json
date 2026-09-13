@@ -1,0 +1,110 @@
+{
+  "cohort": "attribute-text-cleanup-43",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"author\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "p.lh-entryDetailInner--credit"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        "p.lh-entryDetailInner--credit"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "div[class^=\"article_pArticle_Body__\"]"
+        ],
+        [
+          "div.lh-entryDetail-body"
+        ]
+      ],
+      "transforms": {
+        "img.lazyload": {
+          "kind": "function",
+          "line": 54,
+          "path": "internal/extractors/custom/www_lifehacker_jp.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.init.func16"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        },
+        {
+          "Attribute": "datetime",
+          "Selector": "div.lh-entryDetail-header time"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.lifehacker.jp",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1[class^=\"article_pArticle_Title\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1.lh-summary-title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 132664,
+      "path": "internal/fixtures/www.lifehacker.jp.html",
+      "sha256": "7158997799e45b1cfaa66d8da574493803d5d2bed9f0a34e97b7b31824282b73"
+    }
+  ],
+  "function_bearing": true,
+  "getter": "GetWwwLifehackerJpExtractor",
+  "id": "LifehackerJpExtractor",
+  "source": {
+    "end_line": 86,
+    "line": 84,
+    "path": "internal/extractors/custom/www_lifehacker_jp.go",
+    "sha256": "207d7cc8a2dc89603a62e4f6a38cf79d1086ecdda92e173a72d974414f5312ae"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

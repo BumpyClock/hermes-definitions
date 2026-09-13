@@ -1,0 +1,80 @@
+{
+  "cohort": "selector-string-4",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".author a:first-child"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".content"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".author"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.phoronix.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": null,
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "article h1"
+        },
+        {
+          "Attribute": "",
+          "Selector": "article header"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 29332,
+      "path": "internal/fixtures/www.phoronix.com.html",
+      "sha256": "69de5fc82ce68969b9e6dbd14bf276aac58a72df7aebc3a6dbf91768d8d6ac0b"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwPhoronixComExtractor",
+  "id": "WwwPhoronixComExtractor",
+  "source": {
+    "end_line": 43,
+    "line": 41,
+    "path": "internal/extractors/custom/www_phoronix_com.go",
+    "sha256": "cba88cbe699080de93bdcc7f6106afba73fa724a87bb3e7e715fa817ac9b863a"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

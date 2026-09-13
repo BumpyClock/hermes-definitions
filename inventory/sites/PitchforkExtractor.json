@@ -1,0 +1,135 @@
+{
+  "cohort": "selector-string-3",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:author\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".authors-detail__display-name"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "div.body__inner-container"
+        ],
+        [
+          ".review-detail__text"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "div[class^=\"InfoSliceWrapper-\"]"
+        },
+        {
+          "Attribute": "datetime",
+          "Selector": ".pub-date"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:description\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".review-detail__abstract"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "pitchfork.com",
+    "Excerpt": null,
+    "Extend": {
+      "score": {
+        "allowMultiple": false,
+        "format": "",
+        "selectors": [
+          {
+            "Attribute": "",
+            "Selector": "p[class*=\"Rating\"]"
+          },
+          {
+            "Attribute": "",
+            "Selector": ".score"
+          }
+        ],
+        "timezone": ""
+      }
+    },
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        },
+        {
+          "Attribute": "src",
+          "Selector": ".single-album-tombstone__art img"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:title\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 118108,
+      "path": "internal/fixtures/pitchfork.com.html",
+      "sha256": "83a20b4e6d07557423bbf131cd131eede01739d3c362464e6dfd20120b7658f3"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetPitchforkExtractor",
+  "id": "PitchforkExtractor",
+  "source": {
+    "end_line": 67,
+    "line": 65,
+    "path": "internal/extractors/custom/pitchfork_com.go",
+    "sha256": "440fe130e28d248f864ee3c8003c29d0f843739dacc33ba921a832ea77d79413"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

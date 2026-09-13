@@ -1,0 +1,518 @@
+{
+  "commented_registry_entries": [
+    {
+      "fixture": "internal/fixtures/www.refinery29.com.html",
+      "getter": "GetRefinery29Extractor",
+      "id": "Refinery29Extractor",
+      "implementation_present": false,
+      "line": 78,
+      "note": "Commented registry reference only; no Go getter or definition at this revision.",
+      "path": "internal/extractors/custom/index.go"
+    }
+  ],
+  "compiled_definition_literals": [
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/247sports_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/abcnews_go_com.go"
+    },
+    {
+      "line": 12,
+      "path": "internal/extractors/custom/arstechnica_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/biorxiv_org.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/blogger.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/bookwalker_jp.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/buzzap_jp.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/clinicaltrials_gov.go"
+    },
+    {
+      "line": 14,
+      "path": "internal/extractors/custom/daringfireball_net.go"
+    },
+    {
+      "line": 12,
+      "path": "internal/extractors/custom/deadline_com.go"
+    },
+    {
+      "line": 14,
+      "path": "internal/extractors/custom/deadspin_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/epaper_zeit_de.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/fandom_wikia_com.go"
+    },
+    {
+      "line": 5,
+      "path": "internal/extractors/custom/genius_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/getnews_jp.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/gothamist_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/ici_radio_canada_ca.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/japan_cnet_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/jvndb_jvn_jp.go"
+    },
+    {
+      "line": 12,
+      "path": "internal/extractors/custom/ma_ttias_be.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/mashable_com.go"
+    },
+    {
+      "line": 16,
+      "path": "internal/extractors/custom/medium.go"
+    },
+    {
+      "line": 12,
+      "path": "internal/extractors/custom/news_mynavi_jp.go"
+    },
+    {
+      "line": 14,
+      "path": "internal/extractors/custom/news_nationalgeographic_com.go"
+    },
+    {
+      "line": 14,
+      "path": "internal/extractors/custom/nymag_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/pastebin_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/people_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/phpspot_org.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/pitchfork_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/scan_netsecurity_ne_jp.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/sciencefly_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/sect_iij_ad_jp.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/takagi_hiromitsu_jp.go"
+    },
+    {
+      "line": 7,
+      "path": "internal/extractors/custom/techcrunch_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/techlog_iij_ad_jp.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/thoughtcatalog_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/timesofindia_indiatimes_com.go"
+    },
+    {
+      "line": 12,
+      "path": "internal/extractors/custom/twitter_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/uproxx_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/weekly_ascii_jp.go"
+    },
+    {
+      "line": 12,
+      "path": "internal/extractors/custom/wikipedia_org.go"
+    },
+    {
+      "line": 14,
+      "path": "internal/extractors/custom/wired_jp.go"
+    },
+    {
+      "line": 55,
+      "path": "internal/extractors/custom/www_abendblatt_de.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_al_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_americanow_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_androidcentral_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_aol_com.go"
+    },
+    {
+      "line": 14,
+      "path": "internal/extractors/custom/www_apartmenttherapy_com.go"
+    },
+    {
+      "line": 7,
+      "path": "internal/extractors/custom/www_apple_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_asahi_com.go"
+    },
+    {
+      "line": 7,
+      "path": "internal/extractors/custom/www_bbc_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_bloomberg_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_broadwayworld_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_bustle_com.go"
+    },
+    {
+      "line": 12,
+      "path": "internal/extractors/custom/www_buzzfeed_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_cbc_ca.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_cbssports_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_chicagotribune_com.go"
+    },
+    {
+      "line": 12,
+      "path": "internal/extractors/custom/www_cnet_com.go"
+    },
+    {
+      "line": 14,
+      "path": "internal/extractors/custom/www_cnn_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_dmagazine_com.go"
+    },
+    {
+      "line": 12,
+      "path": "internal/extractors/custom/www_elecom_co_jp.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_engadget_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_eonline_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_fastcompany_com.go"
+    },
+    {
+      "line": 14,
+      "path": "internal/extractors/custom/www_fool_com.go"
+    },
+    {
+      "line": 12,
+      "path": "internal/extractors/custom/www_fortinet_com.go"
+    },
+    {
+      "line": 14,
+      "path": "internal/extractors/custom/www_gizmodo_jp.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_gruene_de.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_huffingtonpost_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_infoq_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_inquisitr_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_ipa_go_jp.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_itmedia_co_jp.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_jnsa_org.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_ladbible_com.go"
+    },
+    {
+      "line": 12,
+      "path": "internal/extractors/custom/www_latimes_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_lemonde_fr.go"
+    },
+    {
+      "line": 14,
+      "path": "internal/extractors/custom/www_lifehacker_jp.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_linkedin_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_littlethings_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_macrumors_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_mentalfloss_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_miamiherald_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_moongift_jp.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_msn_com.go"
+    },
+    {
+      "line": 14,
+      "path": "internal/extractors/custom/www_nationalgeographic_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_nbcnews_com.go"
+    },
+    {
+      "line": 12,
+      "path": "internal/extractors/custom/www_ndtv_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_newyorker_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_npr_org.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_nydailynews_com.go"
+    },
+    {
+      "line": 14,
+      "path": "internal/extractors/custom/www_nytimes_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_opposingviews_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_ossnews_jp.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_phoronix_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_politico_com.go"
+    },
+    {
+      "line": 11,
+      "path": "internal/extractors/custom/www_polygon_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_popsugar_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_prospectmagazine_co_uk.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_publickey1_jp.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_qdaily_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_rawstory_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_rbbtoday_com.go"
+    },
+    {
+      "line": 15,
+      "path": "internal/extractors/custom/www_reddit_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_reuters_com.go"
+    },
+    {
+      "line": 7,
+      "path": "internal/extractors/custom/www_rockpapershotgun_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_rollingstone_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_sbnation_com.go"
+    },
+    {
+      "line": 12,
+      "path": "internal/extractors/custom/www_si_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_slate_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_spektrum_de.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_theatlantic_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_theguardian_com.go"
+    },
+    {
+      "line": 12,
+      "path": "internal/extractors/custom/www_theverge_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_tmz_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_today_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_usmagazine_com.go"
+    },
+    {
+      "line": 12,
+      "path": "internal/extractors/custom/www_vox_com.go"
+    },
+    {
+      "line": 12,
+      "path": "internal/extractors/custom/www_washingtonpost_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_westernjournalism_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_wired_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_yahoo_com.go"
+    },
+    {
+      "line": 8,
+      "path": "internal/extractors/custom/www_yomiuri_co_jp.go"
+    },
+    {
+      "line": 14,
+      "path": "internal/extractors/custom/www_youtube_com.go"
+    }
+  ],
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "policy": "Not registered at frozen revision; do not activate during migration.",
+  "unregistered_getters": {}
+}

@@ -1,0 +1,102 @@
+{
+  "cohort": "selector-string-1",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:author\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "span.author_name a"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "#article"
+        ],
+        [
+          "section.article-content.blueprint"
+        ]
+      ],
+      "transforms": {
+        ".image-credit": {
+          "kind": "string",
+          "target_tag": "figcaption"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "mashable.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "header h1"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1.title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 78576,
+      "path": "internal/fixtures/mashable.com.html",
+      "sha256": "a17a8e5262328c47a057c8d4812116385e43d929d7356a63779d1d941342dff1"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetMashableComExtractor",
+  "id": "MashableComExtractor",
+  "source": {
+    "end_line": 55,
+    "line": 53,
+    "path": "internal/extractors/custom/mashable_com.go",
+    "sha256": "7fa99fdee994a5271f29a96cf3ef3e852203bb7a870a05cf415e53b03ee24fd9"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

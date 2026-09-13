@@ -1,0 +1,93 @@
+{
+  "cohort": "selector-string-1",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "div.story--header--author"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".post-category",
+        ".story--header--socials",
+        ".story--header--content"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "article.story"
+        ],
+        [
+          ".entry-content"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"datePublished\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.inquisitr.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1.entry-title.story--header--title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 150369,
+      "path": "internal/fixtures/www.inquisitr.com.html",
+      "sha256": "5caa89c5327f21cccd09c9ce892efcc8daf1cf94e7f71d5a9124b69183c09d66"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwInquisitrComExtractor",
+  "id": "InquisitrExtractor",
+  "source": {
+    "end_line": 52,
+    "line": 7,
+    "path": "internal/extractors/custom/www_inquisitr_com.go",
+    "sha256": "6a74baebe10ccf8ac921f5304225ed8477b60867e8c1fe9c89093449f228c778"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

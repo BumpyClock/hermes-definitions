@@ -1,0 +1,92 @@
+{
+  "cohort": "selector-string-3",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "a.author"
+        },
+        {
+          "Attribute": "",
+          "Selector": "a.article-byline.tracked-offpage"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".module-related"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "div.article-content"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.usmagazine.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "header h1"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 112599,
+      "path": "internal/fixtures/www.usmagazine.com.html",
+      "sha256": "ec15bf0c34bd02ca05ee9b97ff1df39562b81638082676263cd7cc0298a0c6f9"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetUSMagazineExtractor",
+  "id": "USMagazineExtractor",
+  "source": {
+    "end_line": 51,
+    "line": 49,
+    "path": "internal/extractors/custom/www_usmagazine_com.go",
+    "sha256": "e22eb7f0b17c6e6e439df50467cc0733fa191e1795ac41d58d2a9450622acb39"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

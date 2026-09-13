@@ -1,0 +1,167 @@
+{
+  "cohort": "attribute-text-cleanup-43",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"author\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "*[rel=\"author\"] *[itemprop=\"name\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        "article > header",
+        "figcaption .enlarge-link",
+        "figcaption .sep",
+        "figure.video",
+        ".gallery",
+        "aside",
+        ".sidebar"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "article"
+        ],
+        [
+          "div[itemprop=\"articleBody\"]"
+        ]
+      ],
+      "transforms": {
+        "h2": {
+          "kind": "function",
+          "line": 56,
+          "path": "internal/extractors/custom/arstechnica_com.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.init.func1"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "datetime",
+          "Selector": ".byline time"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h2[itemprop=\"description\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "arstechnica.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "article h1"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        },
+        {
+          "Attribute": "",
+          "Selector": "title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 32782,
+      "path": "internal/fixtures/arstechnica.com.html",
+      "sha256": "8ae43001384eab463d614bbcb987a8e058f61863b5560a5113b311213e5fdf64"
+    }
+  ],
+  "function_bearing": true,
+  "getter": "GetArstechnicaComExtractor",
+  "id": "ArstechnicaComExtractor",
+  "source": {
+    "end_line": 86,
+    "line": 84,
+    "path": "internal/extractors/custom/arstechnica_com.go",
+    "sha256": "6c3a6d9359d9de1e9038fb29c327bdb6a501964c53cb707b80d853129c1549dc"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": [
+    {
+      "line": 42,
+      "path": "internal/parser/benchmark_test.go",
+      "text": "\"arstechnica.com.html\","
+    },
+    {
+      "line": 40,
+      "path": "internal/parser/custom_content_test.go",
+      "text": "</body></html>`, \"https://arstechnica.com/example\", &ParserOptions{Fallback: false, ContentType: \"html\"})"
+    },
+    {
+      "line": 45,
+      "path": "internal/parser/custom_content_test.go",
+      "text": "if result.ExtractorUsed != \"custom:arstechnica.com\" {"
+    },
+    {
+      "line": 46,
+      "path": "internal/parser/custom_content_test.go",
+      "text": "t.Fatalf(\"extractor used %q, want custom:arstechnica.com\", result.ExtractorUsed)"
+    },
+    {
+      "line": 64,
+      "path": "internal/parser/custom_content_test.go",
+      "text": "result, err := New().ParseHTMLWithContext(context.Background(), `<html><body><main><p>Short generic fallback.</p></main></body></html>`, \"https://arstechnica.com/example\", &test.opts)"
+    },
+    {
+      "line": 68,
+      "path": "internal/parser/custom_content_test.go",
+      "text": "if result.ExtractorUsed != \"custom:arstechnica.com\" {"
+    },
+    {
+      "line": 69,
+      "path": "internal/parser/custom_content_test.go",
+      "text": "t.Fatalf(\"extractor used %q, want custom:arstechnica.com\", result.ExtractorUsed)"
+    },
+    {
+      "line": 20,
+      "path": "internal/parser/popular_sites_test.go",
+      "text": "url:  \"https://arstechnica.com/science/2026/07/example/\","
+    }
+  ]
+}

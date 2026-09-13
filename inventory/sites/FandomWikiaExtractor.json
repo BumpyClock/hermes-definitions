@@ -1,0 +1,93 @@
+{
+  "cohort": "selector-string-2",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".author vcard"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".fn"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".grid-content"
+        ],
+        [
+          ".entry-content"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "fandom.wikia.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1.entry-title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 167751,
+      "path": "internal/fixtures/fandom.wikia.com.html",
+      "sha256": "a0c751f70df06a3b0e59a4ccb71bec6104a4e38433a177600cad831a7f686bf4"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetFandomWikiaExtractor",
+  "id": "FandomWikiaExtractor",
+  "source": {
+    "end_line": 47,
+    "line": 45,
+    "path": "internal/extractors/custom/fandom_wikia_com.go",
+    "sha256": "4f3afb956ebcb3966201115a9860f0e16bf3d2c892fe183d0880962b0dd15a40"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

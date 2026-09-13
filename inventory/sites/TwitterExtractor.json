@@ -1,0 +1,92 @@
+{
+  "cohort": "dom-noscript-44",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".tweet.permalink-tweet .username"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".stream-item-footer",
+        "button",
+        ".tweet-details-fixer"
+      ],
+      "disable_default_cleaner": true,
+      "selectors": [
+        [
+          ".permalink[role=main]"
+        ]
+      ],
+      "transforms": {
+        ".permalink[role=main]": {
+          "kind": "function",
+          "line": 57,
+          "path": "internal/extractors/custom/twitter_com.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.transformTwitterPermalink"
+        },
+        "s": {
+          "kind": "string",
+          "target_tag": "span"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "data-time-ms",
+          "Selector": ".permalink-tweet ._timestamp[data-time-ms]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "twitter.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": null,
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": null
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 229155,
+      "path": "internal/fixtures/twitter.com.html",
+      "sha256": "b1b4d1e71a9079fc9fea2f417678baa8b2c4f1f69e3433a9ad7167d36d1c7bac"
+    }
+  ],
+  "function_bearing": true,
+  "getter": "GetTwitterExtractor",
+  "id": "TwitterExtractor",
+  "source": {
+    "end_line": 80,
+    "line": 78,
+    "path": "internal/extractors/custom/twitter_com.go",
+    "sha256": "67fb2dfe5579dcad89312839633f8e5b0d523ee4f2fb704e1ba38df99099a07e"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": [
+    {
+      "line": 86,
+      "path": "internal/cleaners/integration_test.go",
+      "text": "<a href=\"https://twitter.com/share\" onclick=\"share('twitter')\">Tweet</a>"
+    },
+    {
+      "line": 134,
+      "path": "internal/extractors/generic/video_test.go",
+      "text": "<meta name=\"twitter:player\" content=\"https://twitter.com/player\">"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "cohort": "selector-string-4",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".ShareByline span:nth-child(2)"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".authors"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "article"
+        ],
+        [
+          ".article-copy"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".ShareByline"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".timestamp"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "abcnews.go.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "div[class*=\"Article_main__body\"] h1"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".article-header h1"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 54848,
+      "path": "internal/fixtures/abcnews.go.com.html",
+      "sha256": "9b8f9903a80236dc2e41d3544357280239693629265154cb40ba49cac7ad5d97"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetABCNewsExtractor",
+  "id": "ABCNewsExtractor",
+  "source": {
+    "end_line": 57,
+    "line": 7,
+    "path": "internal/extractors/custom/abcnews_go_com.go",
+    "sha256": "9a760d47c635ab3cd59825ddfe576cd985ef4b01fd0e58f5dcf0ccc4a8149ea1"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

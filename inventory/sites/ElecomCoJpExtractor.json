@@ -1,0 +1,73 @@
+{
+  "cohort": "attribute-text-cleanup-43",
+  "configuration": {
+    "Author": null,
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": true,
+      "selectors": [
+        [
+          "td.TableMain2"
+        ]
+      ],
+      "transforms": {
+        "table": {
+          "kind": "function",
+          "line": 46,
+          "path": "internal/extractors/custom/www_elecom_co_jp.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.transformElecomTableWidth"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "p.section-last"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.elecom.co.jp",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": null,
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 100792,
+      "path": "internal/fixtures/www.elecom.co.jp.html",
+      "sha256": "a1a8d623a6bf76e6df4b7494e7f943397ddca0f4c9a71b37c355423027307a51"
+    }
+  ],
+  "function_bearing": true,
+  "getter": "GetWwwElecomCoJpExtractor",
+  "id": "ElecomCoJpExtractor",
+  "source": {
+    "end_line": 42,
+    "line": 11,
+    "path": "internal/extractors/custom/www_elecom_co_jp.go",
+    "sha256": "947dbd75c85028e99809846c9b0c7bacc5f4f72eb33b6d74f4768a0dfbff31a9"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

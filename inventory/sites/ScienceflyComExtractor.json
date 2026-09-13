@@ -1,0 +1,98 @@
+{
+  "cohort": "selector-string-2",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "div.cb-author"
+        },
+        {
+          "Attribute": "",
+          "Selector": "div.cb-author-title"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "div.theiaPostSlider_slides"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "sciencefly.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "src",
+          "Selector": "div.theiaPostSlider_slides img"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".entry-title"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".cb-entry-title"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".cb-single-title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 60194,
+      "path": "internal/fixtures/sciencefly.com.html",
+      "sha256": "a8460e63bf9311d257bc887253717c8c035fd9d53a810e3ef0edfea28b8d6858"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetScienceflyComExtractor",
+  "id": "ScienceflyComExtractor",
+  "source": {
+    "end_line": 48,
+    "line": 46,
+    "path": "internal/extractors/custom/sciencefly_com.go",
+    "sha256": "1956cc377a4f6c642b467d52d6089932b3e96efa2b55515f1aefeab7c5080268"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

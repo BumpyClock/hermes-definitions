@@ -1,0 +1,113 @@
+{
+  "cohort": "complex-exception-45",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".byline-component__contributors b span"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".pull-quote.pull-quote--large"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".parsys.content",
+          ".__image-lead__"
+        ],
+        [
+          ".content"
+        ]
+      ],
+      "transforms": {
+        ".parsys.content": {
+          "kind": "function",
+          "line": 60,
+          "path": "internal/extractors/custom/news_nationalgeographic_com.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.init.func9"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".article__deck"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "news.nationalgeographic.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1.main-title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 62795,
+      "path": "internal/fixtures/news.nationalgeographic.com.html",
+      "sha256": "936a556542889b18fc882a4ebb48c511aece311874a1ee5acd1411cd949651e2"
+    }
+  ],
+  "function_bearing": true,
+  "getter": "GetNewsNationalgeographicComExtractor",
+  "id": "NewsNationalgeographicComExtractor",
+  "source": {
+    "end_line": 82,
+    "line": 80,
+    "path": "internal/extractors/custom/news_nationalgeographic_com.go",
+    "sha256": "7bf18e413d096378886ba6eb138630501eb21c5f23559c9bf5d7861ae6a36a69"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

@@ -1,0 +1,105 @@
+{
+  "cohort": "selector-string-1",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "div.article-inline-byline span.byline-name"
+        },
+        {
+          "Attribute": "",
+          "Selector": "span.byline_author"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "div.article-body__content"
+        ],
+        [
+          "div.article-body"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published\"]"
+        },
+        {
+          "Attribute": "datetime",
+          "Selector": ".flag_article-wrapper time.timestamp_article[datetime]"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".flag_article-wrapper time"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.nbcnews.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "div.article-hero-headline h1"
+        },
+        {
+          "Attribute": "",
+          "Selector": "div.article-hed h1"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 76214,
+      "path": "internal/fixtures/www.nbcnews.com.html",
+      "sha256": "572bb19650cbf6a2680e719bb1f1577f46cb1ad256ddc96ae181227812f487a1"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetNBCNewsExtractor",
+  "id": "NBCNewsExtractor",
+  "source": {
+    "end_line": 55,
+    "line": 7,
+    "path": "internal/extractors/custom/www_nbcnews_com.go",
+    "sha256": "aa10526bce675b40f0ce75c9a6bcbc13bf3eee0313c6a1050630b8bf328761a4"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

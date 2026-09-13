@@ -1,0 +1,117 @@
+{
+  "cohort": "selector-string-2",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "[data-testid=\"byline-contributors\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        "h1",
+        "[data-testid=\"byline\"]",
+        "[data-testid=\"share-tools\"]",
+        "[data-component=\"recommendations\"]"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "article"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "datetime",
+          "Selector": "article time"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.bbc.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": [
+      "bbc.com"
+    ],
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "article h1"
+        },
+        {
+          "Attribute": "",
+          "Selector": "[data-component=\"headline-block\"] h1"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [],
+  "function_bearing": false,
+  "getter": "GetBBCExtractor",
+  "id": "BBCExtractor",
+  "source": {
+    "end_line": 33,
+    "line": 6,
+    "path": "internal/extractors/custom/www_bbc_com.go",
+    "sha256": "f1d1e11d7aae618a3f175b99eff267b1de848d721be79e90fb6a260929eaaa28"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": [
+    {
+      "line": 30,
+      "path": "internal/parser/popular_sites_test.go",
+      "text": "url:  \"https://www.bbc.com/news/articles/example\","
+    },
+    {
+      "line": 136,
+      "path": "internal/parser/popular_sites_test.go",
+      "text": "func TestBBCExtractorExcludesNestedRecommendationArticle(t *testing.T) {"
+    },
+    {
+      "line": 143,
+      "path": "internal/parser/popular_sites_test.go",
+      "text": "<p>The final BBC report paragraph provides the concluding context.</p></article></main>`, \"https://www.bbc.com/news/articles/example\", &ParserOptions{Fallback: true, ContentType: \"html\"})"
+    },
+    {
+      "line": 148,
+      "path": "internal/parser/popular_sites_test.go",
+      "text": "if result.ExtractorUsed != \"custom:www.bbc.com\" {"
+    },
+    {
+      "line": 149,
+      "path": "internal/parser/popular_sites_test.go",
+      "text": "t.Fatalf(\"extractor used %q, want custom:www.bbc.com\", result.ExtractorUsed)"
+    }
+  ]
+}

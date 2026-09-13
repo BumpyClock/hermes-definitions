@@ -1,0 +1,115 @@
+{
+  "cohort": "dom-noscript-44",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "span.author"
+        },
+        {
+          "Attribute": "",
+          "Selector": "a.author"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "img.__image-lead__",
+          ".article-main-body"
+        ],
+        [
+          ".article-main-body"
+        ]
+      ],
+      "transforms": {
+        "figure.image": {
+          "kind": "function",
+          "line": 58,
+          "path": "internal/extractors/custom/www_cnet_com.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.init.func13"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "time"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".c-head_dek"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".article-dek"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.cnet.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:title\"]"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 135552,
+      "path": "internal/fixtures/www.cnet.com.html",
+      "sha256": "11af9a59cb4215ed28a480c8fd9997a66d366d57ead879c0a3a4a7825c7e1cfc"
+    }
+  ],
+  "function_bearing": true,
+  "getter": "GetWwwCnetComExtractor",
+  "id": "WwwCnetComExtractor",
+  "source": {
+    "end_line": 79,
+    "line": 77,
+    "path": "internal/extractors/custom/www_cnet_com.go",
+    "sha256": "e02618a87a34b28aba9c549cd1ef4bec4ead7bdab1780297e2df5087b725f520"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

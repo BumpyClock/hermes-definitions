@@ -1,0 +1,116 @@
+{
+  "cohort": "selector-string-2",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"author\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".c-byline__author"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".partner-box",
+        ".callout",
+        ".c-article-writer__image",
+        ".c-article-writer__content",
+        ".c-letters-cta__text",
+        ".c-footer__logo",
+        ".c-recirculation-link",
+        ".twitter-tweet"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "article"
+        ],
+        [
+          ".article-body"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "datetime",
+          "Selector": "time[itemprop=\"datePublished\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"description\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.theatlantic.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".c-article-header__hed"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 37382,
+      "path": "internal/fixtures/www.theatlantic.com.html",
+      "sha256": "2d737b51dd8a76d521361c944bcdbaf44e97a7f4b038487157475f89e51e943c"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetTheAtlanticExtractor",
+  "id": "TheAtlanticExtractor",
+  "source": {
+    "end_line": 66,
+    "line": 64,
+    "path": "internal/extractors/custom/www_theatlantic_com.go",
+    "sha256": "fbdb96fc4235125bbf43b8865b4bfcd912496939992dc53eed504adf62ebea9b"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

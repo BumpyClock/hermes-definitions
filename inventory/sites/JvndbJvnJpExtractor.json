@@ -1,0 +1,66 @@
+{
+  "cohort": "selector-string-4",
+  "configuration": {
+    "Author": null,
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": true,
+      "selectors": [
+        [
+          "#news-list"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "div.modifytxt:nth-child(2)"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "jvndb.jvn.jp",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": null,
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 8490,
+      "path": "internal/fixtures/jvndb.jvn.jp.html",
+      "sha256": "77581d7627f91d070fc372c82b43df3085f0901fb31e14aae0ffeab8a3a7a5b5"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetJvndbJvnJpExtractor",
+  "id": "JvndbJvnJpExtractor",
+  "source": {
+    "end_line": 40,
+    "line": 38,
+    "path": "internal/extractors/custom/jvndb_jvn_jp.go",
+    "sha256": "a161e78bfdcee5c81a26ede5746af83ebc851ec6f3cf97945e919c2c07c19178"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

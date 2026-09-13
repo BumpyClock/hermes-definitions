@@ -1,0 +1,164 @@
+{
+  "cohort": "selector-string-3",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "article header div[class^=\"BylinesWrapper\"]"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:author\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "div[class^=\"ArticleContributors\"] a[rel=\"author\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "article header div[class*=\"Byline__multipleContributors\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        "footer[class^=\"ArticleFooter__footer\"]",
+        "aside"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".article__body"
+        ],
+        [
+          "article.article.main-content"
+        ],
+        [
+          "main[class^=\"Layout__content\"]"
+        ]
+      ],
+      "transforms": {
+        ".caption__credit": {
+          "kind": "string",
+          "target_tag": "figcaption"
+        },
+        ".caption__text": {
+          "kind": "string",
+          "target_tag": "figcaption"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "time.content-header__publish-date"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"pubdate\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "div[class^=\"ContentHeaderDek\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "div.content-header__dek"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h2[class^=\"ArticleHeader__dek\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.newyorker.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1[class^=\"content-header\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1[class^=\"ArticleHeader__hed\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1[class*=\"ContentHeaderHed\"]"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:title\"]"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 120903,
+      "path": "internal/fixtures/www.newyorker.com--magazine.html",
+      "sha256": "1104dd1a316a460e2a5a56e612945b4838f9851dc80686a5ee81696197321ef0"
+    },
+    {
+      "bytes": 135707,
+      "path": "internal/fixtures/www.newyorker.com--multiple-authors.html",
+      "sha256": "a017059ac45b911f8b844645ec776cc4f808a90deb4f7025c7886e5254dcffc2"
+    },
+    {
+      "bytes": 103951,
+      "path": "internal/fixtures/www.newyorker.com.html",
+      "sha256": "0558d45faa55303091476aa97845b3c64c8c09f6d1ee44f075e29a577783fcad"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetNewYorkerExtractor",
+  "id": "NewYorkerExtractor",
+  "source": {
+    "end_line": 75,
+    "line": 73,
+    "path": "internal/extractors/custom/www_newyorker_com.go",
+    "sha256": "1fcc6b50e9f74d183ba2db533670065137b2d994758dd55f00ec7375244ce278"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

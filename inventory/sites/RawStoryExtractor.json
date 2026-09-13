@@ -1,0 +1,101 @@
+{
+  "cohort": "selector-string-1",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "div.main-post-head .social-author__name"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".blog-author a:first-of-type"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".post-body"
+        ],
+        [
+          ".blog-content"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".blog-author a:last-of-type"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.rawstory.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:title\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".blog-title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 87137,
+      "path": "internal/fixtures/www.rawstory.com.html",
+      "sha256": "ba4816e2fae6215dd5484bfe6515fa5ccd3dceb8d7221319dab02f5e24062a04"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwRawstoryComExtractor",
+  "id": "RawStoryExtractor",
+  "source": {
+    "end_line": 54,
+    "line": 7,
+    "path": "internal/extractors/custom/www_rawstory_com.go",
+    "sha256": "c7b34ca8635aa88ea03ececbe3c7da367e77ff12d202bc49e20edc2577bc7c47"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

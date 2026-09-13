@@ -1,0 +1,88 @@
+{
+  "cohort": "selector-string-4",
+  "configuration": {
+    "Author": null,
+    "Content": {
+      "clean": [
+        "ul.mg_service.cf"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "#main"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "ul.meta li:not(.social):first-of-type"
+        }
+      ],
+      "timezone": "Asia/Tokyo"
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:description\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.moongift.jp",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1.title a"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 93126,
+      "path": "internal/fixtures/www.moongift.jp.html",
+      "sha256": "8992b723954f55b062e4d27268e06458cadc720942e24b0c28b0f1e70eebda89"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwMoongiftJpExtractor",
+  "id": "MoongiftJpExtractor",
+  "source": {
+    "end_line": 53,
+    "line": 51,
+    "path": "internal/extractors/custom/www_moongift_jp.go",
+    "sha256": "3d1f08b02d0935f2988a153455eea44afe8c8c5a7fc22be4d4806c85c431021a"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

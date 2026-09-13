@@ -1,0 +1,185 @@
+{
+  "cohort": "attribute-text-cleanup-43",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"author\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".g-byline"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".byline"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"byl\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".ad",
+        "header#story-header",
+        ".story-body-1 .lede.video",
+        ".visually-hidden",
+        "#newsletter-promo",
+        ".promo",
+        ".comments-button",
+        ".hidden",
+        ".comments",
+        ".supplemental",
+        ".nocontent",
+        ".story-footer-links"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "div.g-blocks"
+        ],
+        [
+          "section[name=\"articleBody\"]"
+        ],
+        [
+          "article#story"
+        ]
+      ],
+      "transforms": {
+        "img.g-lazy": {
+          "kind": "function",
+          "line": 45,
+          "path": "internal/extractors/custom/www_nytimes_com.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.GetNYTimesExtractor.func1"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.nytimes.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1[data-testid=\"headline\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1.g-headline"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1[itemprop=\"headline\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1.headline"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1 .balancedHeadline"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 90203,
+      "path": "internal/fixtures/www.nytimes.com--feature.html",
+      "sha256": "e285e488cb83031e62bb24a82c05f311093be349566e32bb1456de8283c44ba4"
+    },
+    {
+      "bytes": 68624,
+      "path": "internal/fixtures/www.nytimes.com--recent.html",
+      "sha256": "e0bfbae0ec3b6ddc6a85f33b22708b04beb3937d746e7125752ed07bd8742cad"
+    },
+    {
+      "bytes": 63114,
+      "path": "internal/fixtures/www.nytimes.com.html",
+      "sha256": "becbd32d29c057763658004adfb7e1d9689a77a56f2b55ebe8166562157ef94c"
+    }
+  ],
+  "function_bearing": true,
+  "getter": "GetNYTimesExtractor",
+  "id": "NYTimesExtractor",
+  "source": {
+    "end_line": 90,
+    "line": 13,
+    "path": "internal/extractors/custom/www_nytimes_com.go",
+    "sha256": "a38442851d8eb94291370717933facd88c8ba0a955397733c8dc1b4ba0fa9ac5"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": [
+    {
+      "line": 16,
+      "path": "internal/parser/benchmark_test.go",
+      "text": "fixtureFile := \"../../internal/fixtures/www.nytimes.com.html\""
+    },
+    {
+      "line": 24,
+      "path": "internal/parser/benchmark_test.go",
+      "text": "url := \"https://www.nytimes.com/test-article\""
+    },
+    {
+      "line": 38,
+      "path": "internal/parser/benchmark_test.go",
+      "text": "\"www.nytimes.com.html\","
+    },
+    {
+      "line": 72,
+      "path": "internal/parser/benchmark_test.go",
+      "text": "fixtureFile := \"../../internal/fixtures/www.nytimes.com.html\""
+    },
+    {
+      "line": 79,
+      "path": "internal/parser/benchmark_test.go",
+      "text": "url := \"https://www.nytimes.com/test-article\""
+    },
+    {
+      "line": 404,
+      "path": "internal/parser/custom_content_test.go",
+      "text": "</body></html>`, \"https://www.nytimes.com/example\", &ParserOptions{ContentType: \"html\", Fallback: false})"
+    }
+  ]
+}

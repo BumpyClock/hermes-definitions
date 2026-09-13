@@ -1,0 +1,116 @@
+{
+  "cohort": "dom-noscript-44",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "a[data-click=\"standardBylineAuthorName\"]"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"author\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".trb_ar_by",
+        ".trb_ar_cr"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".page-article-body"
+        ],
+        [
+          ".trb_ar_main"
+        ]
+      ],
+      "transforms": {
+        ".trb_ar_la": {
+          "kind": "function",
+          "line": 50,
+          "path": "internal/extractors/custom/www_latimes_com.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.GetLATimesExtractor.func1"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[itemprop=\"datePublished\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.latimes.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1.headline"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".trb_ar_hl"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 43566,
+      "path": "internal/fixtures/www.latimes.com--old.html",
+      "sha256": "752a25283b5872cd4ab251524f33a32d565420d01a28838ea0889b40f3861eb4"
+    },
+    {
+      "bytes": 137764,
+      "path": "internal/fixtures/www.latimes.com.html",
+      "sha256": "64c3cb5d93996ec1ae6e9c018be0b56ad860e6e5784778e9c8ff2044bab28e67"
+    }
+  ],
+  "function_bearing": true,
+  "getter": "GetLATimesExtractor",
+  "id": "LATimesExtractor",
+  "source": {
+    "end_line": 68,
+    "line": 11,
+    "path": "internal/extractors/custom/www_latimes_com.go",
+    "sha256": "6ad84c7704c184bcdf235375103ca9f7ffb1af29bcb796702379b7a139cd7b72"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

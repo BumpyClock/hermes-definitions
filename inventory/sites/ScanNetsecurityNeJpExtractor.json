@@ -1,0 +1,88 @@
+{
+  "cohort": "selector-string-1",
+  "configuration": {
+    "Author": null,
+    "Content": {
+      "clean": [
+        "aside.arti-giga"
+      ],
+      "disable_default_cleaner": true,
+      "selectors": [
+        [
+          "div.arti-content.arti-content--thumbnail"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:modified_time\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "header.arti-header p.arti-summary"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "scan.netsecurity.ne.jp",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "header.arti-header h1.head"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 101857,
+      "path": "internal/fixtures/scan.netsecurity.ne.jp.html",
+      "sha256": "3576893e0853e4b3e0f81f39121993a85782ce54b9c5cb690330c3510cfa9b24"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetScanNetsecurityNeJpExtractor",
+  "id": "ScanNetsecurityNeJpExtractor",
+  "source": {
+    "end_line": 53,
+    "line": 51,
+    "path": "internal/extractors/custom/scan_netsecurity_ne_jp.go",
+    "sha256": "a1b7ede9c9b72158310103f35a9f3554bfe8c0852261755babaeb042868dc588"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

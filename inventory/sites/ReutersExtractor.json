@@ -1,0 +1,132 @@
+{
+  "cohort": "selector-string-1",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "[data-testid=\"AuthorName\"]"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:author\"]"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:article:author\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".author"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        "[data-testid=\"promo-box\"]",
+        "[data-testid=\"ContextWidget\"]",
+        "div[class^=\"ArticleBody-byline-container-\"]",
+        "#article-byline .author"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "[data-testid=\"ArticleBody\"]"
+        ],
+        [
+          "div.ArticleBodyWrapper"
+        ],
+        [
+          "#article-text"
+        ]
+      ],
+      "transforms": {
+        ".article-subtitle": {
+          "kind": "string",
+          "target_tag": "h4"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:article:published_time\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.reuters.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1[data-testid=\"Heading\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1[class*=\"ArticleHeader-headline-\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1.article-headline"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 32681,
+      "path": "internal/fixtures/www.reuters.com.html",
+      "sha256": "bdcf83a961289e3080e21a5c4854f93a75aed145faf17867c2908e216ef41df8"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetReutersExtractor",
+  "id": "ReutersExtractor",
+  "source": {
+    "end_line": 62,
+    "line": 7,
+    "path": "internal/extractors/custom/www_reuters_com.go",
+    "sha256": "65ef3cca6ff89a32f85f3ebb045c614d03cd558a73bd4145cdb4547232863ec6"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": [
+    {
+      "line": 78,
+      "path": "internal/parser/popular_sites_test.go",
+      "text": "url:  \"https://www.reuters.com/world/example/\","
+    }
+  ]
+}

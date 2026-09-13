@@ -1,0 +1,106 @@
+{
+  "cohort": "selector-string-4",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".username"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".paste_box_line2 .t_us + a"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".source"
+        ],
+        [
+          "#selectable .text"
+        ]
+      ],
+      "transforms": {
+        "li": {
+          "kind": "string",
+          "target_tag": "p"
+        },
+        "ol": {
+          "kind": "string",
+          "target_tag": "div"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".date"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".paste_box_line2 .t_da + span"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "pastebin.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 56278,
+      "path": "internal/fixtures/pastebin.com.html",
+      "sha256": "ed3998665036aee06d64850557de90e40a6c323d20f29797556dadf8b6770171"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetPastebinExtractor",
+  "id": "PastebinExtractor",
+  "source": {
+    "end_line": 63,
+    "line": 61,
+    "path": "internal/extractors/custom/pastebin_com.go",
+    "sha256": "9c02cae4d78b429af38eaa6e79a9e3ec0a88ef717df78b412a5aaad001ea0589"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

@@ -1,0 +1,160 @@
+{
+  "cohort": "complex-exception-45",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"author\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        "button",
+        "svg",
+        "[class*=\"follow\"]"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "article"
+        ]
+      ],
+      "transforms": {
+        "figure": {
+          "kind": "function",
+          "line": 119,
+          "path": "internal/extractors/custom/medium.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.transformMediumFigure"
+        },
+        "iframe": {
+          "kind": "function",
+          "line": 83,
+          "path": "internal/extractors/custom/medium.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.transformMediumIframe"
+        },
+        "img": {
+          "kind": "function",
+          "line": 146,
+          "path": "internal/extractors/custom/medium.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.transformMediumImage"
+        },
+        "section span:first-of-type": {
+          "kind": "function",
+          "line": 42,
+          "path": "internal/extractors/custom/medium.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.init.func7"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "medium.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:title\"]"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 70329,
+      "path": "internal/fixtures/medium.com--another.html",
+      "sha256": "16bd575f864ac77dfaa2486d4542e8e0fe475e0bae1cd3c343051c356ee1078a"
+    },
+    {
+      "bytes": 70212,
+      "path": "internal/fixtures/medium.com.html",
+      "sha256": "b5921832f2ac160f78ad10d99a275f286eb593e8e9ee921b824ca0f832dfaf99"
+    }
+  ],
+  "function_bearing": true,
+  "getter": "GetMediumExtractor",
+  "id": "MediumExtractor",
+  "source": {
+    "end_line": 173,
+    "line": 171,
+    "path": "internal/extractors/custom/medium.go",
+    "sha256": "dcd4ad2d90dcc9c4b4c3966d5e0bd901ed623030eca4d0176d49e96b1c8f1016"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": [
+    {
+      "line": 13,
+      "path": "internal/extractors/custom/custom_test.go",
+      "text": "func TestMediumExtractor(t *testing.T) {"
+    },
+    {
+      "line": 14,
+      "path": "internal/extractors/custom/custom_test.go",
+      "text": "extractor := GetMediumExtractor()"
+    },
+    {
+      "line": 17,
+      "path": "internal/extractors/custom/custom_test.go",
+      "text": "if extractor.Domain != \"medium.com\" {"
+    },
+    {
+      "line": 18,
+      "path": "internal/extractors/custom/custom_test.go",
+      "text": "t.Errorf(\"Expected domain 'medium.com', got %s\", extractor.Domain)"
+    },
+    {
+      "line": 118,
+      "path": "internal/extractors/custom/custom_test.go",
+      "text": "GetCustomExtractorByDomain(\"medium.com\")"
+    },
+    {
+      "line": 41,
+      "path": "internal/parser/benchmark_test.go",
+      "text": "\"medium.com.html\","
+    },
+    {
+      "line": 96,
+      "path": "internal/parser/popular_sites_test.go",
+      "text": "url:  \"https://medium.com/@example/current-story\","
+    }
+  ]
+}

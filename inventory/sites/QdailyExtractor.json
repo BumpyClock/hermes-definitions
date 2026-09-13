@@ -1,0 +1,104 @@
+{
+  "cohort": "selector-string-4",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".name"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".lazyload",
+        ".lazylad",
+        ".lazylood"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".detail"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "data-origindate",
+          "Selector": ".date.smart-date"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".excerpt"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.qdaily.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "src",
+          "Selector": ".article-detail-hd img"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h2"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h2.title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 55001,
+      "path": "internal/fixtures/www.qdaily.com.html",
+      "sha256": "5bab8b6c2612c02a15e09b79284d267eef91626c04164335e9fc9fc335011e26"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetQdailyExtractor",
+  "id": "QdailyExtractor",
+  "source": {
+    "end_line": 59,
+    "line": 57,
+    "path": "internal/extractors/custom/www_qdaily_com.go",
+    "sha256": "e5ccf354bf2d83cd97ed700f927a733bd650d1295904f062f9ef6cf244c12253"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

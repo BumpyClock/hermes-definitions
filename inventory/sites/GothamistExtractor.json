@@ -1,0 +1,202 @@
+{
+  "cohort": "selector-string-4",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".article-metadata:nth-child(3) .byline-author"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".author"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".image-none br",
+        ".image-left br",
+        ".image-right br",
+        ".galleryEase"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".article-body"
+        ],
+        [
+          ".entry-body"
+        ]
+      ],
+      "transforms": {
+        ".image-left i": {
+          "kind": "string",
+          "target_tag": "figcaption"
+        },
+        ".image-none i": {
+          "kind": "string",
+          "target_tag": "figcaption"
+        },
+        ".image-right i": {
+          "kind": "string",
+          "target_tag": "figcaption"
+        },
+        "div.image-left": {
+          "kind": "string",
+          "target_tag": "figure"
+        },
+        "div.image-none": {
+          "kind": "string",
+          "target_tag": "figure"
+        },
+        "div.image-right": {
+          "kind": "string",
+          "target_tag": "figure"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "abbr"
+        },
+        {
+          "Attribute": "",
+          "Selector": "abbr.published"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "gothamist.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": [
+      "chicagoist.com",
+      "laist.com",
+      "sfist.com",
+      "shanghaiist.com",
+      "dcist.com"
+    ],
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".entry-header h1"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 102870,
+      "path": "internal/fixtures/gothamist.com.html",
+      "sha256": "f48b82ef8441d1209adb530a4cb1f0b7ff9e8afc866f1b28484f0b6f16cac79c"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetGothamistComExtractor",
+  "id": "GothamistExtractor",
+  "source": {
+    "end_line": 74,
+    "line": 7,
+    "path": "internal/extractors/custom/gothamist_com.go",
+    "sha256": "fe4de7907c9ead176045314b6001044f6bd8ad0c774ed919a81ca30981510798"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": [
+    {
+      "line": 13,
+      "path": "internal/parser/custom_content_sanitization_test.go",
+      "text": "doc, err := goquery.NewDocumentFromReader(strings.NewReader(`<html><body><div class=\"article-body\"><p>Story text.</p><div class=\"image-none\"><img src=\"https://gothamist.com/photo.jpg\" alt=\"Photo\" width=\"640\" height=\"360\"><i>Photo caption</i></div></div></body></html>`))"
+    },
+    {
+      "line": 17,
+      "path": "internal/parser/custom_content_sanitization_test.go",
+      "text": "content, err := processCustomContent(doc.Find(\".article-body\"), doc, custom.GetGothamistComExtractor().Content, \"Gothamist headline\", \"https://gothamist.com/news/example\")"
+    },
+    {
+      "line": 21,
+      "path": "internal/parser/custom_content_sanitization_test.go",
+      "text": "const expected = `<figure><img src=\"https://gothamist.com/photo.jpg\" alt=\"Photo\"/><figcaption>Photo caption</figcaption></figure>`"
+    },
+    {
+      "line": 20,
+      "path": "internal/parser/custom_content_test.go",
+      "text": "<div class=\"image-none\"><img src=\"https://gothamist.com/photo.jpg\" alt=\"Photo\" width=\"640\" height=\"360\"><i>Photo caption</i></div>"
+    },
+    {
+      "line": 22,
+      "path": "internal/parser/custom_content_test.go",
+      "text": "</body></html>`, \"https://gothamist.com/news/example\", &ParserOptions{Fallback: true, ContentType: \"html\"})"
+    },
+    {
+      "line": 27,
+      "path": "internal/parser/custom_content_test.go",
+      "text": "if result.ExtractorUsed != \"custom:gothamist.com\" {"
+    },
+    {
+      "line": 28,
+      "path": "internal/parser/custom_content_test.go",
+      "text": "t.Fatalf(\"extractor used %q, want custom:gothamist.com\", result.ExtractorUsed)"
+    },
+    {
+      "line": 30,
+      "path": "internal/parser/custom_content_test.go",
+      "text": "if !strings.Contains(result.Content, \"<figure><img src=\\\"https://gothamist.com/photo.jpg\\\" alt=\\\"Photo\\\"/><figcaption>Photo caption</figcaption></figure>\") {"
+    },
+    {
+      "line": 9,
+      "path": "internal/utils/security/sanitizer_test.go",
+      "text": "content := SanitizeHTML(`<figure><a href=\"https://gothamist.com/story\"><img src=\"http://gothamist.com/photo.jpg\" alt=\"Photo\" width=\"640\" height=\"360\"></a><a href=\"http://gothamist.com/related\">Related story</a><figcaption>Photo caption</figcaption></figure>`)"
+    },
+    {
+      "line": 13,
+      "path": "internal/utils/security/sanitizer_test.go",
+      "text": "`<a href=\"https://gothamist.com/story\"`,"
+    },
+    {
+      "line": 14,
+      "path": "internal/utils/security/sanitizer_test.go",
+      "text": "`<a href=\"http://gothamist.com/related\"`,"
+    },
+    {
+      "line": 15,
+      "path": "internal/utils/security/sanitizer_test.go",
+      "text": "`<img src=\"http://gothamist.com/photo.jpg\" alt=\"Photo\" width=\"640\" height=\"360\">`,"
+    }
+  ]
+}

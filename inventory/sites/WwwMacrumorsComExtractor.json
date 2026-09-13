@@ -1,0 +1,107 @@
+{
+  "cohort": "selector-string-3",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "article a[rel=\"author\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".author-url"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "article"
+        ],
+        [
+          ".article"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "datetime",
+          "Selector": "time"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"description\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.macrumors.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1.title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 99234,
+      "path": "internal/fixtures/www.macrumors.com.html",
+      "sha256": "55b04599aeed350edcf24500593fb6c8362a6e2df061c9cb980558437b5c8d97"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwMacrumorsComExtractor",
+  "id": "WwwMacrumorsComExtractor",
+  "source": {
+    "end_line": 56,
+    "line": 54,
+    "path": "internal/extractors/custom/www_macrumors_com.go",
+    "sha256": "15e1c51c00d91444296018d3e643f394769ac768015fbd795939df8c5777b526"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

@@ -1,0 +1,98 @@
+{
+  "cohort": "selector-string-3",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".byline"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".article-video-wrapper",
+        ".show-for-small-only"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".article-content",
+          ".image",
+          ".body"
+        ],
+        [
+          ".body"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"publish_date\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.americanow.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".title"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"title\"]"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 19509,
+      "path": "internal/fixtures/www.americanow.com.html",
+      "sha256": "8952c6149f5bc988c6ecc209da3eca02124a37bd4955dfd47c8def8be48fcff0"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwAmericanowComExtractor",
+  "id": "AmericanowExtractor",
+  "source": {
+    "end_line": 53,
+    "line": 7,
+    "path": "internal/extractors/custom/www_americanow_com.go",
+    "sha256": "e4ec2008898f978355260a97538e2246a6c1c98e55839b9f5d29fb0b85e50969"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

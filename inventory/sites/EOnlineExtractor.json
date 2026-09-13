@@ -1,0 +1,110 @@
+{
+  "cohort": "selector-string-2",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".article-detail__meta__author"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".entry-meta__author a"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".article-detail__main-content section"
+        ],
+        [
+          ".post-content section, .post-content div.post-content__image"
+        ]
+      ],
+      "transforms": {
+        "div.post-content__image": {
+          "kind": "string",
+          "target_tag": "figure"
+        },
+        "div.post-content__image .image__credits": {
+          "kind": "string",
+          "target_tag": "figcaption"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[itemprop=\"datePublished\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.eonline.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1.article-detail__title"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1.article__title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 56220,
+      "path": "internal/fixtures/www.eonline.com.html",
+      "sha256": "9b88df3d24077ec763235bf50405595a51d0e511141f5c7bb986f84c0e3759ae"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetEOnlineExtractor",
+  "id": "EOnlineExtractor",
+  "source": {
+    "end_line": 55,
+    "line": 53,
+    "path": "internal/extractors/custom/www_eonline_com.go",
+    "sha256": "52035afc28717669fc9f46a5b592d214a294d1812bf586854cc40eb7f941399f"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

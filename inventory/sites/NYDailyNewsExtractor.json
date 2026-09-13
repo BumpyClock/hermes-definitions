@@ -1,0 +1,106 @@
+{
+  "cohort": "selector-string-2",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".article_byline span"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"parsely-author\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        "dl#ra-tags",
+        ".ra-related",
+        "a.ra-editor",
+        "dl#ra-share-bottom"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "article"
+        ],
+        [
+          "article#ra-body"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "time"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"sailthru.date\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.nydailynews.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1.headline"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1#ra-headline"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 24915,
+      "path": "internal/fixtures/www.nydailynews.com.html",
+      "sha256": "19ebd4a7182659dc179ff7b893ba4f167a27da572032114484eb0cb84541b59c"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetNYDailyNewsExtractor",
+  "id": "NYDailyNewsExtractor",
+  "source": {
+    "end_line": 56,
+    "line": 7,
+    "path": "internal/extractors/custom/www_nydailynews_com.go",
+    "sha256": "209bf752d8cba4bb0d5aca584b83a55c5b06d37836eb014a685be48681be1b30"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

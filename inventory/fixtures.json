@@ -1,0 +1,870 @@
+{
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "files": [
+    {
+      "bytes": 64251,
+      "path": "internal/fixtures/247sports.com.html",
+      "sha256": "cd16e6711075ff51dfb4dc39bc949341b3b9b7005b60f3c86e262350a7ef05cd"
+    },
+    {
+      "bytes": 54848,
+      "path": "internal/fixtures/abcnews.go.com.html",
+      "sha256": "9b8f9903a80236dc2e41d3544357280239693629265154cb40ba49cac7ad5d97"
+    },
+    {
+      "bytes": 32782,
+      "path": "internal/fixtures/arstechnica.com.html",
+      "sha256": "8ae43001384eab463d614bbcb987a8e058f61863b5560a5113b311213e5fdf64"
+    },
+    {
+      "bytes": 81722,
+      "path": "internal/fixtures/biorxiv.org.html",
+      "sha256": "8ce7782be33a46f1cba1025cc67a36ffa20c1addda2b2ee3227a0c69b511d82e"
+    },
+    {
+      "bytes": 153797,
+      "path": "internal/fixtures/blisterreview.com.html",
+      "sha256": "c5d4692315b08b61527a04396cd7c2cac8894debbb03977f99be0fd989a3e49b"
+    },
+    {
+      "bytes": 101107,
+      "path": "internal/fixtures/bookwalker.jp.html",
+      "sha256": "a021938a38648047326694c21adb4c9ed6b5348136602a60f38f41da711c963c"
+    },
+    {
+      "bytes": 70021,
+      "path": "internal/fixtures/buzzap.jp.html",
+      "sha256": "dc8d2875825163a814459472d113812984c84cbddfc65118e78881772374e5f9"
+    },
+    {
+      "bytes": 76497,
+      "path": "internal/fixtures/clinicaltrials.gov.html",
+      "sha256": "a7e4b288383d6908d9f946ad33b34a153d78e1fb75661fa8c73aa4e53f19505c"
+    },
+    {
+      "bytes": 175890,
+      "path": "internal/fixtures/deadline.com.html",
+      "sha256": "ee6b2227dcc56e6b9b2a8aa6e18b3b17d5fe82d9478df2720d3a5c9e9f5e2edc"
+    },
+    {
+      "bytes": 77079,
+      "path": "internal/fixtures/deadspin.com--video.html",
+      "sha256": "a1e2a6b3b189e2fc125c55b90cfd0f4fa41c9a0c55de227d7005ecacfb03378c"
+    },
+    {
+      "bytes": 93168,
+      "path": "internal/fixtures/deadspin.com.html",
+      "sha256": "ba3eac7f3bc8d415ee105bc260b99338fc6a4bf02a255c0b121c1294b945f4d8"
+    },
+    {
+      "bytes": 3192,
+      "path": "internal/fixtures/epaper.zeit.de.html",
+      "sha256": "410a8c79ff2b259e493b1f9246ef9da6a9d2c4423d71656bad8a966b11456151"
+    },
+    {
+      "bytes": 167751,
+      "path": "internal/fixtures/fandom.wikia.com.html",
+      "sha256": "a0c751f70df06a3b0e59a4ccb71bec6104a4e38433a177600cad831a7f686bf4"
+    },
+    {
+      "bytes": 65428,
+      "path": "internal/fixtures/fortune.com.html",
+      "sha256": "142b27abf26d0acb3f2ba5757f7cd849870eb83d231fcc7dadf51bcb730b446e"
+    },
+    {
+      "bytes": 61702,
+      "path": "internal/fixtures/forward.com.html",
+      "sha256": "742869f066c99687f42c820bb8a2bf43cbd20844c77bb7a53f8f554c3f693c77"
+    },
+    {
+      "bytes": 230458,
+      "path": "internal/fixtures/genius.com.html",
+      "sha256": "654068ee3033e30439d4f22fa14cdc91ebc366882a8bf1086daff627f0bb7471"
+    },
+    {
+      "bytes": 56809,
+      "path": "internal/fixtures/getnews.jp.html",
+      "sha256": "abb778dc747292ec84d6bf801fae22a455e316ced4d7a3368f4218cff6f295d8"
+    },
+    {
+      "bytes": 280195,
+      "path": "internal/fixtures/github.com.html",
+      "sha256": "d58051d61fb0ba2b732c00a5750c50a71bc6e597be085cb9068551d8163f2a79"
+    },
+    {
+      "bytes": 102870,
+      "path": "internal/fixtures/gothamist.com.html",
+      "sha256": "f48b82ef8441d1209adb530a4cb1f0b7ff9e8afc866f1b28484f0b6f16cac79c"
+    },
+    {
+      "bytes": 183218,
+      "path": "internal/fixtures/hellogiggles.com.html",
+      "sha256": "9e9fbd0d76f86ded33c47e3a83eccef43c5bc24f426ce17fba8ecf82744e57b5"
+    },
+    {
+      "bytes": 129011,
+      "path": "internal/fixtures/ici.radio-canada.ca.html",
+      "sha256": "a2c83b15cd5b81649169d8fb98fd0e7774389afefdd93d97d6d07a6ea71d978e"
+    },
+    {
+      "bytes": 81099,
+      "path": "internal/fixtures/japan.cnet.com.html",
+      "sha256": "725b888aab92f1ff3539da5d113dc0d94e77acba6bcbb0c0d265b995977baf12"
+    },
+    {
+      "bytes": 62418,
+      "path": "internal/fixtures/japan.zdnet.com.html",
+      "sha256": "c7591c5589b3e8197a4dff672491290d8650ce3c102f268980efea87bd48dc73"
+    },
+    {
+      "bytes": 8490,
+      "path": "internal/fixtures/jvndb.jvn.jp.html",
+      "sha256": "77581d7627f91d070fc372c82b43df3085f0901fb31e14aae0ffeab8a3a7a5b5"
+    },
+    {
+      "bytes": 45893,
+      "path": "internal/fixtures/ma.ttias.be.html",
+      "sha256": "fc622c5233c8adc4bf9bd18dc03adb0362ce59e6ea5c1f628f17fc8d4bbca6fc"
+    },
+    {
+      "bytes": 78576,
+      "path": "internal/fixtures/mashable.com.html",
+      "sha256": "a17a8e5262328c47a057c8d4812116385e43d929d7356a63779d1d941342dff1"
+    },
+    {
+      "bytes": 70329,
+      "path": "internal/fixtures/medium.com--another.html",
+      "sha256": "16bd575f864ac77dfaa2486d4542e8e0fe475e0bae1cd3c343051c356ee1078a"
+    },
+    {
+      "bytes": 70212,
+      "path": "internal/fixtures/medium.com.html",
+      "sha256": "b5921832f2ac160f78ad10d99a275f286eb593e8e9ee921b824ca0f832dfaf99"
+    },
+    {
+      "bytes": 51442,
+      "path": "internal/fixtures/money.cnn.com.html",
+      "sha256": "c9ffafd8d788a6b520fb00a1b5c611dce03f1b3405fc3bfde70eae111d13ed9d"
+    },
+    {
+      "bytes": 275952,
+      "path": "internal/fixtures/newrepublic.com--minutes.html",
+      "sha256": "19823a7ddaeed5d6564dc65657220a4223bed76e5065a085e91337d154410a50"
+    },
+    {
+      "bytes": 86504,
+      "path": "internal/fixtures/newrepublic.com.html",
+      "sha256": "a09ac5f58e3489ff7512191b995cccd7a30c35718227bff04bdd3132c478d207"
+    },
+    {
+      "bytes": 116814,
+      "path": "internal/fixtures/news.mynavi.jp.html",
+      "sha256": "b5909b5caf1440584f3cc7ac8c798796b38e0cc6302a6dd0397dcb2485b4719a"
+    },
+    {
+      "bytes": 62795,
+      "path": "internal/fixtures/news.nationalgeographic.com.html",
+      "sha256": "936a556542889b18fc882a4ebb48c511aece311874a1ee5acd1411cd949651e2"
+    },
+    {
+      "bytes": 711834,
+      "path": "internal/fixtures/nock/fetch-resource-test.js",
+      "sha256": "1dcd0c55968d4d86bb179862ce8c959134844128d32f4070eae218a3ab6a37ed"
+    },
+    {
+      "bytes": 692511,
+      "path": "internal/fixtures/nock/mercury-test.js",
+      "sha256": "62285cbe817725ea1c53546d123c6fadedafac4caaeaf9cdc0a593fce3480bfd"
+    },
+    {
+      "bytes": 293965,
+      "path": "internal/fixtures/nock/resource-test.js",
+      "sha256": "59003741f4cee9021bcaaf08e0cf5111d26b3f6ce5a85ed97625df9a167c7552"
+    },
+    {
+      "bytes": 343002,
+      "path": "internal/fixtures/nymag.com.html",
+      "sha256": "d5490bf257ec813125cfb215347bd09c65dd4710eaab257156a56fbc3d494f82"
+    },
+    {
+      "bytes": 101127,
+      "path": "internal/fixtures/obamawhitehouse.archives.gov--blog.html",
+      "sha256": "5a1b57729f6153ee01687560ff5a17033efa7d94060748ce2ba75201d24c50a4"
+    },
+    {
+      "bytes": 100728,
+      "path": "internal/fixtures/obamawhitehouse.archives.gov--empty.html",
+      "sha256": "067a6a7bed20095e33c78437e5dde938d10dfe89c29a25051a3214bcdb34253d"
+    },
+    {
+      "bytes": 104078,
+      "path": "internal/fixtures/obamawhitehouse.archives.gov--speeches.html",
+      "sha256": "9e81ceb0f3d8cfa619339f773204b87d04a7ff70a1beec975f66a058a520be69"
+    },
+    {
+      "bytes": 118278,
+      "path": "internal/fixtures/obamawhitehouse.archives.gov.html",
+      "sha256": "e743195e919aff0c9ee4e19ad87dc6f93c70d3a5b0c0bc216beb70bce89ea49d"
+    },
+    {
+      "bytes": 50121,
+      "path": "internal/fixtures/observer.com.html",
+      "sha256": "dd89bf549d83a7c37c1b178a90fce912960bd393a5239974d2f7aa19b3acceb0"
+    },
+    {
+      "bytes": 398709,
+      "path": "internal/fixtures/otrs.com.html",
+      "sha256": "ffff541b13977aabc8c2b0771b7e3efc449b3e69f26cd47f7dd0b01c719bbda4"
+    },
+    {
+      "bytes": 139265,
+      "path": "internal/fixtures/pagesix.com.html",
+      "sha256": "a55a66ee1843c6a99d7f8805e189119cb0cb95e73cfe822cc598da928852a5d1"
+    },
+    {
+      "bytes": 56278,
+      "path": "internal/fixtures/pastebin.com.html",
+      "sha256": "ed3998665036aee06d64850557de90e40a6c323d20f29797556dadf8b6770171"
+    },
+    {
+      "bytes": 110596,
+      "path": "internal/fixtures/people.com.html",
+      "sha256": "94a62f994a64a68b320d4955c1b694355ad9a70f23e7f0bf96b94fc5903db3ec"
+    },
+    {
+      "bytes": 22566,
+      "path": "internal/fixtures/phpspot.org.html",
+      "sha256": "91ad9e590335581851365937eba95a015672629f025ddc00a386da140e3e38c3"
+    },
+    {
+      "bytes": 118108,
+      "path": "internal/fixtures/pitchfork.com.html",
+      "sha256": "83a20b4e6d07557423bbf131cd131eede01739d3c362464e6dfd20120b7658f3"
+    },
+    {
+      "bytes": 93475,
+      "path": "internal/fixtures/postlight.com.html",
+      "sha256": "1ec5e6ab65e67835e5c117b38badbc8a5d6ced8d688f0dfff0a594d5a22c1372"
+    },
+    {
+      "bytes": 74278,
+      "path": "internal/fixtures/qz.com.html",
+      "sha256": "c13a39c83a007af5170ae88ec225031d2576d28117be817dd1be6abc577a7214"
+    },
+    {
+      "bytes": 256116,
+      "path": "internal/fixtures/sandiegouniontribune.com.html",
+      "sha256": "832a9c7194950dbe75712466f4672615530e007f5c2e96eb38177d7cd8bff3f5"
+    },
+    {
+      "bytes": 101857,
+      "path": "internal/fixtures/scan.netsecurity.ne.jp.html",
+      "sha256": "3576893e0853e4b3e0f81f39121993a85782ce54b9c5cb690330c3510cfa9b24"
+    },
+    {
+      "bytes": 60194,
+      "path": "internal/fixtures/sciencefly.com.html",
+      "sha256": "a8460e63bf9311d257bc887253717c8c035fd9d53a810e3ef0edfea28b8d6858"
+    },
+    {
+      "bytes": 63269,
+      "path": "internal/fixtures/sect.iij.ad.jp.html",
+      "sha256": "36e923186851dacd182ddd9f2d5fc6abc793277a322062ddac1fbfdedc533024"
+    },
+    {
+      "bytes": 284752,
+      "path": "internal/fixtures/takagi-hiromitsu.jp.html",
+      "sha256": "e43a78d5e9da22f9cb7345cf67102a8fd88e63078995434c8f7cf19f0f4f0960"
+    },
+    {
+      "bytes": 31575,
+      "path": "internal/fixtures/techlog.iij.ad.jp.html",
+      "sha256": "d6f283f8ed29f0686df9b7c93030457570dce52fed945c5e8b63d4bc1b70896c"
+    },
+    {
+      "bytes": 63405,
+      "path": "internal/fixtures/thefederalistpapers.org.html",
+      "sha256": "9c1156c73218cecc297ace4370162564a02ced472bed8f89b927c78d41935208"
+    },
+    {
+      "bytes": 106182,
+      "path": "internal/fixtures/thoughtcatalog.com.html",
+      "sha256": "83cfb0318abe0b92ec8a5ebcea838350da71339e804c1c92d209695dea11bd69"
+    },
+    {
+      "bytes": 88490,
+      "path": "internal/fixtures/timesofindia.indiatimes.com.html",
+      "sha256": "1b99d57f17016d6a92fd6a8816dd1a770f97c24e950d835e96c99154f2822b9d"
+    },
+    {
+      "bytes": 229155,
+      "path": "internal/fixtures/twitter.com.html",
+      "sha256": "b1b4d1e71a9079fc9fea2f417678baa8b2c4f1f69e3433a9ad7167d36d1c7bac"
+    },
+    {
+      "bytes": 61229,
+      "path": "internal/fixtures/uproxx.com.html",
+      "sha256": "101822b41b09b58c7bc1a869b650b0cb828f215b5342c5fee15fd9052f9381be"
+    },
+    {
+      "bytes": 43368,
+      "path": "internal/fixtures/weekly.ascii.jp.html",
+      "sha256": "6e3810b541bfcb7a585300020459e71e524d12c85ac906d51538b09b794016ab"
+    },
+    {
+      "bytes": 133438,
+      "path": "internal/fixtures/wired.jp.html",
+      "sha256": "f4dfe8ac9fa0866bf34cf266783ff46a8e56efbc4b52dd43d25e33b895e0a29f"
+    },
+    {
+      "bytes": 70539,
+      "path": "internal/fixtures/www.abendblatt.de.html",
+      "sha256": "7f97cbb67717a86aee0029e19402dc9b2e5085954560e118e840c569d92d9995"
+    },
+    {
+      "bytes": 24942,
+      "path": "internal/fixtures/www.al.com.html",
+      "sha256": "0d3dfbf3825e6fdfbe8d331d91bf4915431e2d853afe6de37bdbc27ef9d22f37"
+    },
+    {
+      "bytes": 19509,
+      "path": "internal/fixtures/www.americanow.com.html",
+      "sha256": "8952c6149f5bc988c6ecc209da3eca02124a37bd4955dfd47c8def8be48fcff0"
+    },
+    {
+      "bytes": 74315,
+      "path": "internal/fixtures/www.androidcentral.com.html",
+      "sha256": "85c128862a133008a0f2210c03c45f03541847a686bd4e6fdff52c0ccedd3dc1"
+    },
+    {
+      "bytes": 96737,
+      "path": "internal/fixtures/www.aol.com.html",
+      "sha256": "f45c7b501f3b2ba47d62701ca9cc7736191b38e8e86d86829ee07f8381819803"
+    },
+    {
+      "bytes": 96100,
+      "path": "internal/fixtures/www.apartmenttherapy.com.html",
+      "sha256": "20a185cd25bd1b3cf6b19b3b2e9c13709bd2f7792521eb0faa3576f86f542b50"
+    },
+    {
+      "bytes": 117782,
+      "path": "internal/fixtures/www.asahi.com.html",
+      "sha256": "3071ccef69328ed1bdf14b7fe195dbacd0cb416dc0c68d61c1f1fd5acf71ca0b"
+    },
+    {
+      "bytes": 173296,
+      "path": "internal/fixtures/www.bloomberg.com--graphics.html",
+      "sha256": "b5a1df224e6350e2aae58f956f54638a29f92627c50f11d046ce7697bbab026c"
+    },
+    {
+      "bytes": 76226,
+      "path": "internal/fixtures/www.bloomberg.com--news.html",
+      "sha256": "7970a082332e0b78a93460080a5fda5859e8ae5c1391f58822bf2be6abb2241c"
+    },
+    {
+      "bytes": 222335,
+      "path": "internal/fixtures/www.bloomberg.com.html",
+      "sha256": "5e8f27a25a2c0fd2fa9368a22b3e36738788ed7f717c04b271ec26711ba1c9de"
+    },
+    {
+      "bytes": 84696,
+      "path": "internal/fixtures/www.broadwayworld.com.html",
+      "sha256": "a7c314a5d656e04bb6f7985db9dffb22c473cec6a9b54ff51e968229ed38ff4e"
+    },
+    {
+      "bytes": 45617,
+      "path": "internal/fixtures/www.bustle.com.html",
+      "sha256": "e5fa1fd3e240c97721b91920ab6a3cf9d2709987e6512ba5e9a8e4842ca8ba30"
+    },
+    {
+      "bytes": 146088,
+      "path": "internal/fixtures/www.buzzfeed.com--splash.html",
+      "sha256": "b43c6daab4af726b0669435a2dc03e1715db87bd51b5b867508da6835d3535c2"
+    },
+    {
+      "bytes": 123769,
+      "path": "internal/fixtures/www.buzzfeed.com.html",
+      "sha256": "c63421640325090f52d10c822a64d49e17f21c428cd07ed83fb7fb1198b339a5"
+    },
+    {
+      "bytes": 55347,
+      "path": "internal/fixtures/www.cbc.ca.html",
+      "sha256": "96fe89b08143695db35eae0994f9543565b5a098c82b4c9db42dff683df2fb0c"
+    },
+    {
+      "bytes": 240931,
+      "path": "internal/fixtures/www.cbssports.com.html",
+      "sha256": "c87563349b2e965f8dc2d05ee6781275f28c9a176dc26c802b49282c4020754e"
+    },
+    {
+      "bytes": 28010,
+      "path": "internal/fixtures/www.chicagotribune.com.html",
+      "sha256": "6f18ca16ff7fe170a940b1eace998925a05bcd83be649e850c05ac0c3d77ee15"
+    },
+    {
+      "bytes": 81961,
+      "path": "internal/fixtures/www.cnbc.com--redesign.html",
+      "sha256": "8efc6712fa2b366b98e4a8a96620de589abbd6e420d55179849677e05fc5a19e"
+    },
+    {
+      "bytes": 83797,
+      "path": "internal/fixtures/www.cnbc.com.html",
+      "sha256": "d3a8b222353a025a8a885473cacb02e6a2a7da2a9e40fdca4721633f1b936832"
+    },
+    {
+      "bytes": 135552,
+      "path": "internal/fixtures/www.cnet.com.html",
+      "sha256": "11af9a59cb4215ed28a480c8fd9997a66d366d57ead879c0a3a4a7825c7e1cfc"
+    },
+    {
+      "bytes": 252455,
+      "path": "internal/fixtures/www.cnn.com.html",
+      "sha256": "727c795927a4c6b4f8ef3a9fff89dd55a6bd76c9f7dc8f0fee94b885fe8c999f"
+    },
+    {
+      "bytes": 34366,
+      "path": "internal/fixtures/www.dmagazine.com.html",
+      "sha256": "8396189742b9e53561e92e5625d5a84c8b804652d00965014dc0825808fb36aa"
+    },
+    {
+      "bytes": 100792,
+      "path": "internal/fixtures/www.elecom.co.jp.html",
+      "sha256": "a1a8d623a6bf76e6df4b7494e7f943397ddca0f4c9a71b37c355423027307a51"
+    },
+    {
+      "bytes": 123346,
+      "path": "internal/fixtures/www.engadget.com.html",
+      "sha256": "43a7ec14b77beeeacd5d3cb51191fd8d6e3021bfd04d5673c4d024821564f6a5"
+    },
+    {
+      "bytes": 56220,
+      "path": "internal/fixtures/www.eonline.com.html",
+      "sha256": "9b88df3d24077ec763235bf50405595a51d0e511141f5c7bb986f84c0e3759ae"
+    },
+    {
+      "bytes": 45246,
+      "path": "internal/fixtures/www.fastcompany.com.html",
+      "sha256": "a03f5c02a6cd746ac27f258827577fc478b0ab1556668306becad241940085c9"
+    },
+    {
+      "bytes": 143324,
+      "path": "internal/fixtures/www.fool.com.html",
+      "sha256": "44b95bbe0ec2c3cdb569d83f92a3e2c6889eacb4fe53a8713cdb5fa5d3421981"
+    },
+    {
+      "bytes": 42197,
+      "path": "internal/fixtures/www.fortinet.com.html",
+      "sha256": "6dc059812d575b122d54585e42e6cfae97d8892f38fbdc1c6fe2919098ad0ea7"
+    },
+    {
+      "bytes": 71861,
+      "path": "internal/fixtures/www.gizmodo.jp.html",
+      "sha256": "f8c68aef42e3d388588e4df1bc7e172c76b58da638b7b6078c7c8bc05db03fb9"
+    },
+    {
+      "bytes": 47898,
+      "path": "internal/fixtures/www.gruene.de.html",
+      "sha256": "fdaacc7f075ba77dd72dda635317ffaaf4a51fd6788a75851303ea47f52c65b4"
+    },
+    {
+      "bytes": 84699,
+      "path": "internal/fixtures/www.huffingtonpost.com.html",
+      "sha256": "ff3bdc5fa307ee2e58e447c4a6d4e346cd1b0e4699976f0a5df99809bfeb12d4"
+    },
+    {
+      "bytes": 112013,
+      "path": "internal/fixtures/www.infoq.com.html",
+      "sha256": "143fe6ee16f868b53cd3d1c42c279bde1725a502bce82fe16f15f3983919c486"
+    },
+    {
+      "bytes": 150369,
+      "path": "internal/fixtures/www.inquisitr.com.html",
+      "sha256": "5caa89c5327f21cccd09c9ce892efcc8daf1cf94e7f71d5a9124b69183c09d66"
+    },
+    {
+      "bytes": 70658,
+      "path": "internal/fixtures/www.investmentexecutive.com.html",
+      "sha256": "69c35fa5c8ab71efb73273a054b9cf6a5fcd69b2a528bd367a5ad85c6432a4d8"
+    },
+    {
+      "bytes": 17930,
+      "path": "internal/fixtures/www.ipa.go.jp.html",
+      "sha256": "6533dd2cead39fccc8d57fefd9972786ae202284383674549cc667d238dbd820"
+    },
+    {
+      "bytes": 68784,
+      "path": "internal/fixtures/www.itmedia.co.jp.html",
+      "sha256": "64fbc42a3ac7618e9b6c0567711f321024d69098c69c9bc0804d2b35a487b174"
+    },
+    {
+      "bytes": 24947,
+      "path": "internal/fixtures/www.jnsa.org.html",
+      "sha256": "e5b485ba5c8913e78155a234422ba9b0b3ff3528dfefb8e3aeebf9d1536a2021"
+    },
+    {
+      "bytes": 137481,
+      "path": "internal/fixtures/www.ladbible.com.html",
+      "sha256": "baca25d198de23919855be336a45e0b2870a13592c8b8f8e26f5ee5450e764b0"
+    },
+    {
+      "bytes": 43566,
+      "path": "internal/fixtures/www.latimes.com--old.html",
+      "sha256": "752a25283b5872cd4ab251524f33a32d565420d01a28838ea0889b40f3861eb4"
+    },
+    {
+      "bytes": 137764,
+      "path": "internal/fixtures/www.latimes.com.html",
+      "sha256": "64c3cb5d93996ec1ae6e9c018be0b56ad860e6e5784778e9c8ff2044bab28e67"
+    },
+    {
+      "bytes": 89457,
+      "path": "internal/fixtures/www.lemonde.fr.html",
+      "sha256": "6f1144feb4e256bb61c215b2b9f25caf510df054945497347a0455ba2123a189"
+    },
+    {
+      "bytes": 132664,
+      "path": "internal/fixtures/www.lifehacker.jp.html",
+      "sha256": "7158997799e45b1cfaa66d8da574493803d5d2bed9f0a34e97b7b31824282b73"
+    },
+    {
+      "bytes": 96510,
+      "path": "internal/fixtures/www.linkedin.com.html",
+      "sha256": "66d1805430eff1575d90401555bede20f81276ce2e1fb0be84bda17be3f5df05"
+    },
+    {
+      "bytes": 1421711,
+      "path": "internal/fixtures/www.littlethings.com.html",
+      "sha256": "d67af96c58f0eae7c8757d5bf83dfa7dda50dd8e08b93c3ba263289851511dd7"
+    },
+    {
+      "bytes": 99234,
+      "path": "internal/fixtures/www.macrumors.com.html",
+      "sha256": "55b04599aeed350edcf24500593fb6c8362a6e2df061c9cb980558437b5c8d97"
+    },
+    {
+      "bytes": 373471,
+      "path": "internal/fixtures/www.mentalfloss.com.html",
+      "sha256": "5738c2a3028b77d313b6212672015d254cd24042d3db8ddb252e1bc2273c0ca2"
+    },
+    {
+      "bytes": 101387,
+      "path": "internal/fixtures/www.miamiherald.com.html",
+      "sha256": "b4ee4c1d46aa734eac96b4db8889c954a8f80ee918ac9abb8cd2f0ab0a0d5cd6"
+    },
+    {
+      "bytes": 93126,
+      "path": "internal/fixtures/www.moongift.jp.html",
+      "sha256": "8992b723954f55b062e4d27268e06458cadc720942e24b0c28b0f1e70eebda89"
+    },
+    {
+      "bytes": 28124,
+      "path": "internal/fixtures/www.msn.com.html",
+      "sha256": "01a0282bcb0f9a4e3b1730129f2733bb7b78a57eaf7302f28e0c8b1a60f34c4a"
+    },
+    {
+      "bytes": 75089,
+      "path": "internal/fixtures/www.msnbc.com.html",
+      "sha256": "35f0a837b4806e02377b34cab61db2d8d1614a189f40a89504334d02bb85b1cc"
+    },
+    {
+      "bytes": 124714,
+      "path": "internal/fixtures/www.nationalgeographic.com.html",
+      "sha256": "7a9d601ca5f2b379ec70b14b9ce7573ee5204409ac3d0c90abc8de9e75dad013"
+    },
+    {
+      "bytes": 76214,
+      "path": "internal/fixtures/www.nbcnews.com.html",
+      "sha256": "572bb19650cbf6a2680e719bb1f1577f46cb1ad256ddc96ae181227812f487a1"
+    },
+    {
+      "bytes": 113387,
+      "path": "internal/fixtures/www.ndtv.com.html",
+      "sha256": "22fa53aa9a8fc24c18f866067a04723710639270bfed5783a81be151a8e458fd"
+    },
+    {
+      "bytes": 120903,
+      "path": "internal/fixtures/www.newyorker.com--magazine.html",
+      "sha256": "1104dd1a316a460e2a5a56e612945b4838f9851dc80686a5ee81696197321ef0"
+    },
+    {
+      "bytes": 135707,
+      "path": "internal/fixtures/www.newyorker.com--multiple-authors.html",
+      "sha256": "a017059ac45b911f8b844645ec776cc4f808a90deb4f7025c7886e5254dcffc2"
+    },
+    {
+      "bytes": 103951,
+      "path": "internal/fixtures/www.newyorker.com.html",
+      "sha256": "0558d45faa55303091476aa97845b3c64c8c09f6d1ee44f075e29a577783fcad"
+    },
+    {
+      "bytes": 80230,
+      "path": "internal/fixtures/www.npr.org.html",
+      "sha256": "65b2962c936b8102dcc2ce8630030c350548c378dfffaeb4a1a9633f611bc4e1"
+    },
+    {
+      "bytes": 24915,
+      "path": "internal/fixtures/www.nydailynews.com.html",
+      "sha256": "19ebd4a7182659dc179ff7b893ba4f167a27da572032114484eb0cb84541b59c"
+    },
+    {
+      "bytes": 90203,
+      "path": "internal/fixtures/www.nytimes.com--feature.html",
+      "sha256": "e285e488cb83031e62bb24a82c05f311093be349566e32bb1456de8283c44ba4"
+    },
+    {
+      "bytes": 68624,
+      "path": "internal/fixtures/www.nytimes.com--recent.html",
+      "sha256": "e0bfbae0ec3b6ddc6a85f33b22708b04beb3937d746e7125752ed07bd8742cad"
+    },
+    {
+      "bytes": 63114,
+      "path": "internal/fixtures/www.nytimes.com.html",
+      "sha256": "becbd32d29c057763658004adfb7e1d9689a77a56f2b55ebe8166562157ef94c"
+    },
+    {
+      "bytes": 122805,
+      "path": "internal/fixtures/www.opposingviews.com.html",
+      "sha256": "ffd606b81306026e7f5e06ac86a03f1d0e410aa23513331ddebb3826da0dcdd9"
+    },
+    {
+      "bytes": 59345,
+      "path": "internal/fixtures/www.oreilly.co.jp.html",
+      "sha256": "ffd446be187e242a05f8582b2eaca5234835a67480237fb604473dd536f6a209"
+    },
+    {
+      "bytes": 79658,
+      "path": "internal/fixtures/www.ossnews.jp.html",
+      "sha256": "a137565924151fda0612bf9ea87756e893eab753ab6bb3580aaa6899f3ab7959"
+    },
+    {
+      "bytes": 29332,
+      "path": "internal/fixtures/www.phoronix.com.html",
+      "sha256": "69de5fc82ce68969b9e6dbd14bf276aac58a72df7aebc3a6dbf91768d8d6ac0b"
+    },
+    {
+      "bytes": 52986,
+      "path": "internal/fixtures/www.politico.com--test-case-2.html",
+      "sha256": "f3a708b0c2c538cfa4fa3e9019142bb20e6c5e1506d8cbab9c5b7e8f768327fe"
+    },
+    {
+      "bytes": 67434,
+      "path": "internal/fixtures/www.politico.com--test-case-3.html",
+      "sha256": "a44d10371b2e5551005e65be326cdfed0a91bc9021b30091ab33820845a6da9b"
+    },
+    {
+      "bytes": 68704,
+      "path": "internal/fixtures/www.politico.com.html",
+      "sha256": "fdafbed3145d13782630fd79541b1cba59f3f383a2440d114b60376f065a191f"
+    },
+    {
+      "bytes": 74825,
+      "path": "internal/fixtures/www.popsugar.com.html",
+      "sha256": "0db198bf80e71bb97a76414a51cd7ad7ca6a355722618558813d687461fdb91f"
+    },
+    {
+      "bytes": 117994,
+      "path": "internal/fixtures/www.prospectmagazine.co.uk.html",
+      "sha256": "f257af3d6246c9a0278895dfe8a879ab3fee6edbe1e0aaa8a0564e5bcafa810b"
+    },
+    {
+      "bytes": 26404,
+      "path": "internal/fixtures/www.publickey1.jp.html",
+      "sha256": "dd5230196abdc020a4ce37eb1333fbec834d408dd799c0da57f15c9c0cbc41e4"
+    },
+    {
+      "bytes": 55001,
+      "path": "internal/fixtures/www.qdaily.com.html",
+      "sha256": "5bab8b6c2612c02a15e09b79284d267eef91626c04164335e9fc9fc335011e26"
+    },
+    {
+      "bytes": 87137,
+      "path": "internal/fixtures/www.rawstory.com.html",
+      "sha256": "ba4816e2fae6215dd5484bfe6515fa5ccd3dceb8d7221319dab02f5e24062a04"
+    },
+    {
+      "bytes": 88098,
+      "path": "internal/fixtures/www.rbbtoday.com.html",
+      "sha256": "ac91fb22434638fe59c4a3cf4a28a308516dfdb17981962a4599b1eb2691d51b"
+    },
+    {
+      "bytes": 86965,
+      "path": "internal/fixtures/www.recode.net.html",
+      "sha256": "336e23cb7790453779a2f5203c8ad0b0d7e21bbc75c04172fcec4ed640d4465c"
+    },
+    {
+      "bytes": 1581491,
+      "path": "internal/fixtures/www.reddit.com--embedded.html",
+      "sha256": "677da2b647e35587985c4e3f13cd7605734ae493164318576e0315b6db5f394a"
+    },
+    {
+      "bytes": 1656846,
+      "path": "internal/fixtures/www.reddit.com--external-image.html",
+      "sha256": "4c46b2af78cfb0762180ab186f0de07c37d88667ff85b4a10d4a3ee321e356b4"
+    },
+    {
+      "bytes": 2209446,
+      "path": "internal/fixtures/www.reddit.com--external-link.html",
+      "sha256": "200b63755f4fcef8fa6d4654ba7145464db7736e54814504752e5ebed47bffe5"
+    },
+    {
+      "bytes": 2656126,
+      "path": "internal/fixtures/www.reddit.com--image.html",
+      "sha256": "06fe98dd0972416e2d8460d2565af5e22cae6ee8f6930aa7ea8ff137468d0910"
+    },
+    {
+      "bytes": 160227,
+      "path": "internal/fixtures/www.reddit.com--title-only.html",
+      "sha256": "8ad10d8efef9075050ce22cb567accf0ca22ec2d4e5f1098f8dd061fad8e015b"
+    },
+    {
+      "bytes": 123175,
+      "path": "internal/fixtures/www.reddit.com--video.html",
+      "sha256": "6186e833a27a3bee3355df04eb5c9417f30da151ac1b84ed2a8eb22bf98fdd29"
+    },
+    {
+      "bytes": 1924999,
+      "path": "internal/fixtures/www.reddit.com.html",
+      "sha256": "f0f1413112900e8e34f38cc378cd4e9cd966678fac2e06ee0f3f590ccd30f944"
+    },
+    {
+      "bytes": 58238,
+      "path": "internal/fixtures/www.refinery29.com.html",
+      "sha256": "78ceb29c628f638137483901ce31426ebf828a25f378fc340cb77b7e8d8d0fd5"
+    },
+    {
+      "bytes": 32681,
+      "path": "internal/fixtures/www.reuters.com.html",
+      "sha256": "bdcf83a961289e3080e21a5c4854f93a75aed145faf17867c2908e216ef41df8"
+    },
+    {
+      "bytes": 202402,
+      "path": "internal/fixtures/www.rollingstone.com.html",
+      "sha256": "6e512809cf85d68e2c4178a15836ebaf84109fc06f7ce4b0d8c4babd920ed325"
+    },
+    {
+      "bytes": 426109,
+      "path": "internal/fixtures/www.sanwa.co.jp.html",
+      "sha256": "0583550fa6d2bc89a8d0c58f2ad66dd6e4c4cb3e5d545c5ed585a8303314b151"
+    },
+    {
+      "bytes": 184183,
+      "path": "internal/fixtures/www.sbnation.com.html",
+      "sha256": "e30ffba43c5ca29077fd5c88d7ef64853dbc1de10973b01985aac53bd227f745"
+    },
+    {
+      "bytes": 309438,
+      "path": "internal/fixtures/www.si.com.html",
+      "sha256": "7f53f3d7eeec1a2330874d22518e1b32eb633ff00878868bd0528061d0876851"
+    },
+    {
+      "bytes": 51272,
+      "path": "internal/fixtures/www.slate.com.html",
+      "sha256": "f88475a3af1d9a256bbf3f031cb4dca12d2e34e44b65d879074c682af73b367f"
+    },
+    {
+      "bytes": 105191,
+      "path": "internal/fixtures/www.spektrum.de.html",
+      "sha256": "833a336b0d74714ef39502e3b8c0517967ff205eda30097ead1d99fe222d0c76"
+    },
+    {
+      "bytes": 37382,
+      "path": "internal/fixtures/www.theatlantic.com.html",
+      "sha256": "2d737b51dd8a76d521361c944bcdbaf44e97a7f4b038487157475f89e51e943c"
+    },
+    {
+      "bytes": 129772,
+      "path": "internal/fixtures/www.theguardian.com.html",
+      "sha256": "f5abcddc4b4368f35b2f9f1461a5821137c91f02fd1e0e8382558f94efcace54"
+    },
+    {
+      "bytes": 99402,
+      "path": "internal/fixtures/www.thepennyhoarder.com.html",
+      "sha256": "ffa8bd47ba0c4f2290a34f78082e0d81466c022b274aa3e0ef5dbf690851b905"
+    },
+    {
+      "bytes": 42223,
+      "path": "internal/fixtures/www.thepoliticalinsider.com.html",
+      "sha256": "b2a169087b1c295eeecdeeae711271ea9bf8aec62f0835f466d9a3036f694fc3"
+    },
+    {
+      "bytes": 116408,
+      "path": "internal/fixtures/www.theverge.com--feature.html",
+      "sha256": "60407c6f50e07a40a0d7969f18b657dd576acd679e0fb43156cdd2bb2df92928"
+    },
+    {
+      "bytes": 126190,
+      "path": "internal/fixtures/www.theverge.com.html",
+      "sha256": "fca63ceba9bc2b306daf1dc2b45a3d47ceaf1fbcbbfd0f9883efa2ed484dfa8d"
+    },
+    {
+      "bytes": 115213,
+      "path": "internal/fixtures/www.tmz.com.html",
+      "sha256": "3448937bfa8ed2ede088d1d2233c807049842c1a3fdb0c472fa735517debc2c4"
+    },
+    {
+      "bytes": 95024,
+      "path": "internal/fixtures/www.today.com.html",
+      "sha256": "0bf68137924a990fa3bae6825f450ad5baf6660b6eaa52f6d833a2272a5f8cfe"
+    },
+    {
+      "bytes": 112599,
+      "path": "internal/fixtures/www.usmagazine.com.html",
+      "sha256": "ec15bf0c34bd02ca05ee9b97ff1df39562b81638082676263cd7cc0298a0c6f9"
+    },
+    {
+      "bytes": 124956,
+      "path": "internal/fixtures/www.vox.com.html",
+      "sha256": "43cd789844e422045d82394fdcfc9e6de957105aa3f31888bf2e97f2dff713f5"
+    },
+    {
+      "bytes": 740174,
+      "path": "internal/fixtures/www.vulture.com--content-test.html",
+      "sha256": "9e7c81b2f96c3fc03bcac31f18e3cfb2e919cc79688e74876cc62bd7306bb0cb"
+    },
+    {
+      "bytes": 150844,
+      "path": "internal/fixtures/www.vulture.com.html",
+      "sha256": "a7ecbcfa24d58931243ffd4d343c8a1c62d0e55ba8d94aeb4a2cb7e1b9b57854"
+    },
+    {
+      "bytes": 40722,
+      "path": "internal/fixtures/www.washingtonpost.com.html",
+      "sha256": "3e7617177701210537af7d057814fa77e4817a8789b28a1fd43eb87daaf2dc1f"
+    },
+    {
+      "bytes": 165809,
+      "path": "internal/fixtures/www.westernjournalism.com.html",
+      "sha256": "3711569a90b4e5fb7afe15a706e15f2da2fcec0cc53496bd5f5142ee7b3937c1"
+    },
+    {
+      "bytes": 112583,
+      "path": "internal/fixtures/www.wired.com--content-test.html",
+      "sha256": "8e69d000052ef41e6aaad291231dcb5eee71f1921819375a2b06c19a57890459"
+    },
+    {
+      "bytes": 135561,
+      "path": "internal/fixtures/www.wired.com--other.html",
+      "sha256": "d982fd8309e66493de83e15e41c38c3141fe18e8df09908422852a31ec76cf3f"
+    },
+    {
+      "bytes": 184732,
+      "path": "internal/fixtures/www.wired.com.html",
+      "sha256": "9226ae52b64ad5a5edb346618be47021320f55b254fce29a212f83f82ccce9b9"
+    },
+    {
+      "bytes": 192308,
+      "path": "internal/fixtures/www.yahoo.com.html",
+      "sha256": "55c194292ba534ab4f12a81a87810c13a25e0a0e3c45e66a979d1ecf821d6299"
+    },
+    {
+      "bytes": 53691,
+      "path": "internal/fixtures/www.yomiuri.co.jp.html",
+      "sha256": "10526fbe67ceb19c7e2f26eac66c407b85f4c8e3a84d097b1692dd9ade9973e3"
+    },
+    {
+      "bytes": 990105,
+      "path": "internal/fixtures/www.youtube.com.html",
+      "sha256": "6b72a3ea578d5212ac859431a1eec2f44bb3b287e1f1db7945df35a22a03621f"
+    }
+  ]
+}

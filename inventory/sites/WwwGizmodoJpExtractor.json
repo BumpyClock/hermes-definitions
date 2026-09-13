@@ -1,0 +1,96 @@
+{
+  "cohort": "attribute-text-cleanup-43",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "li.p-post-AssistAuthor"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        "h1.p-post-title",
+        "ul.p-post-Assist"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "article.p-post"
+        ]
+      ],
+      "transforms": {
+        "img.p-post-thumbnailImage": {
+          "kind": "function",
+          "line": 49,
+          "path": "internal/extractors/custom/www_gizmodo_jp.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.init.func15"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "datetime",
+          "Selector": "li.p-post-AssistTime time"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.gizmodo.jp",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1.p-post-title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 71861,
+      "path": "internal/fixtures/www.gizmodo.jp.html",
+      "sha256": "f8c68aef42e3d388588e4df1bc7e172c76b58da638b7b6078c7c8bc05db03fb9"
+    }
+  ],
+  "function_bearing": true,
+  "getter": "GetWwwGizmodoJpExtractor",
+  "id": "WwwGizmodoJpExtractor",
+  "source": {
+    "end_line": 76,
+    "line": 74,
+    "path": "internal/extractors/custom/www_gizmodo_jp.go",
+    "sha256": "2bf1076b19bc12babae0ccbea6081e2eecec55a4a4654add0235ab9f8e5362f1"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

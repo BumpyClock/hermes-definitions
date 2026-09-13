@@ -1,0 +1,90 @@
+{
+  "cohort": "selector-string-2",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "span[itemprop=author]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "div[itemprop=articlebody]"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[itemprop=datePublished]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.broadwayworld.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1[itemprop=headline]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1.article-title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 84696,
+      "path": "internal/fixtures/www.broadwayworld.com.html",
+      "sha256": "a7c314a5d656e04bb6f7985db9dffb22c473cec6a9b54ff51e968229ed38ff4e"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwBroadwayworldComExtractor",
+  "id": "BroadwayWorldExtractor",
+  "source": {
+    "end_line": 50,
+    "line": 7,
+    "path": "internal/extractors/custom/www_broadwayworld_com.go",
+    "sha256": "f39fc5b08a0407f8d45fbfb0ee6f6e7ddafe1d6294f0a617a982264fb084d4e8"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

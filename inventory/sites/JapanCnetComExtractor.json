@@ -1,0 +1,86 @@
+{
+  "cohort": "selector-string-3",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".writer"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "div.article_body"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".date"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "japan.cnet.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".leaf-headline-ttl"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 81099,
+      "path": "internal/fixtures/japan.cnet.com.html",
+      "sha256": "725b888aab92f1ff3539da5d113dc0d94e77acba6bcbb0c0d265b995977baf12"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetJapanCnetComExtractor",
+  "id": "JapanCnetComExtractor",
+  "source": {
+    "end_line": 48,
+    "line": 46,
+    "path": "internal/extractors/custom/japan_cnet_com.go",
+    "sha256": "d912bb8cb2d0bb28c9874a846854ff983fa7be581bb6e7e42d72cf23e26f0f14"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

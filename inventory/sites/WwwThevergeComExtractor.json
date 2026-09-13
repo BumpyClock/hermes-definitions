@@ -1,0 +1,176 @@
+{
+  "cohort": "dom-noscript-44",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"author\"]"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"parsely-author\"]"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"cse-authors\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".aside",
+        "img.c-dynamic-image",
+        ".duet--article--image-gallery-two-up .kqz8fh5 .kqz8fh8 .kqz8fh7",
+        ".duet--article--image-gallery-two-up .kqz8fha .kqz8fh9",
+        "div[class*='image-gallery'] img[srcset]",
+        ".duet--media--content-warning",
+        "._1etxtj1",
+        ".c-related-list",
+        ".c-entry-group-labels",
+        ".c-follow-button",
+        ".tly2fw0",
+        "button",
+        ".c-image-gallery__nav",
+        "[class*='follow']"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".duet--article--article-body-component"
+        ],
+        [
+          "div[id*='zephr-anchor']"
+        ],
+        [
+          "article"
+        ],
+        [
+          ".article-content"
+        ],
+        [
+          ".c-entry-hero .e-image",
+          ".c-entry-intro",
+          ".c-entry-content"
+        ],
+        [
+          ".e-image--hero",
+          ".c-entry-content"
+        ],
+        [
+          ".l-wrapper .l-feature"
+        ],
+        [
+          "div.c-entry-content"
+        ]
+      ],
+      "transforms": {
+        "noscript": {
+          "kind": "function",
+          "line": 67,
+          "path": "internal/extractors/custom/www_theverge_com.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.init.func20"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".p-dek"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.theverge.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 116408,
+      "path": "internal/fixtures/www.theverge.com--feature.html",
+      "sha256": "60407c6f50e07a40a0d7969f18b657dd576acd679e0fb43156cdd2bb2df92928"
+    },
+    {
+      "bytes": 126190,
+      "path": "internal/fixtures/www.theverge.com.html",
+      "sha256": "fca63ceba9bc2b306daf1dc2b45a3d47ceaf1fbcbbfd0f9883efa2ed484dfa8d"
+    }
+  ],
+  "function_bearing": true,
+  "getter": "GetWwwThevergeComExtractor",
+  "id": "WwwThevergeComExtractor",
+  "source": {
+    "end_line": 108,
+    "line": 106,
+    "path": "internal/extractors/custom/www_theverge_com.go",
+    "sha256": "33a5b2651a8b10776a82c0a0f75b9d880b6764f67cfa62186e496b3fbd046a26"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": [
+    {
+      "line": 218,
+      "path": "internal/extractors/generic/description_test.go",
+      "text": "url:       \"https://www.theverge.com\","
+    },
+    {
+      "line": 39,
+      "path": "internal/extractors/generic/site_meta_test.go",
+      "text": "siteName := (&GenericSiteNameExtractor{}).Extract(selection, \"https://www.theverge.com\", nil)"
+    },
+    {
+      "line": 42,
+      "path": "internal/extractors/generic/site_meta_test.go",
+      "text": "siteTitle := (&GenericSiteTitleExtractor{}).Extract(selection, \"https://www.theverge.com\", nil)"
+    },
+    {
+      "line": 45,
+      "path": "internal/extractors/generic/site_meta_test.go",
+      "text": "siteImage := (&GenericSiteImageExtractor{}).Extract(selection, \"https://www.theverge.com\", nil)"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "guardian-synthetic-layout",
+  "site": "TheGuardianExtractor",
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "definition_identity": {"kind": "legacy-compiled", "revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b"},
+  "input": "www.theguardian.com.html",
+  "input_sha256": "e6cf459fbf4c0f1c0443a75062ea4fb75913c0a086207c5ffd08c8726c821ae9",
+  "legacy": "legacy.jsonl",
+  "status": "current-layout-unverified",
+  "provenance": {
+    "kind": "synthetic-layout-seed",
+    "created_at": "2026-09-13",
+    "source_url": "https://www.theguardian.com/",
+    "source_fixture": "internal/fixtures/www.theguardian.com.html",
+    "source_fixture_sha256": "f5abcddc4b4368f35b2f9f1461a5821137c91f02fd1e0e8382558f94efcace54",
+    "retention_basis": "Original synthetic prose and metadata; no publisher article text or assets copied.",
+    "notes": "Selector-level reconstruction informed by the frozen extractor and existing fixture structure. No fresh capture; source URL identifies the site only."
+  },
+  "expected": {
+    "metadata": {"title": "River survey records", "author": "Alex River", "date_published": "2025-06-11T09:00:00Z"},
+    "content_contains": ["The river survey records clear water", "café notes and Unicode text"],
+    "content_excludes": ["REMOVE_SEED_RELATED", "REMOVE_SEED_PROMOTION"],
+    "html_contains": ["<p>"]
+  }
+}

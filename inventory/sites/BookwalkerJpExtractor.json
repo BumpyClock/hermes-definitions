@@ -1,0 +1,107 @@
+{
+  "cohort": "selector-string-1",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "div.p-author__list"
+        },
+        {
+          "Attribute": "",
+          "Selector": "div.authors"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        "span.label.label--trial",
+        "dt.info-head.info-head--coin",
+        "dd.info-contents.info-contents--coin",
+        "div.info-notice.fn-toggleClass"
+      ],
+      "disable_default_cleaner": true,
+      "selectors": [
+        [
+          "div.p-main__information"
+        ],
+        [
+          "div.main-info",
+          "div.main-cover-inner"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "dl.p-information__data dd:nth-of-type(7)"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".work-info .work-detail:first-of-type .work-detail-contents:last-of-type"
+        }
+      ],
+      "timezone": "Asia/Tokyo"
+    },
+    "Dek": null,
+    "Domain": "bookwalker.jp",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1.p-main__title"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1.main-heading"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 101107,
+      "path": "internal/fixtures/bookwalker.jp.html",
+      "sha256": "a021938a38648047326694c21adb4c9ed6b5348136602a60f38f41da711c963c"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetBookwalkerJpExtractor",
+  "id": "BookwalkerJpExtractor",
+  "source": {
+    "end_line": 62,
+    "line": 60,
+    "path": "internal/extractors/custom/bookwalker_jp.go",
+    "sha256": "a36992def7127fdf0084398ebcb09510aeb6db9c9f07562c1a2de5ca45a9f2a3"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

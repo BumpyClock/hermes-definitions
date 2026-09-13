@@ -1,0 +1,76 @@
+{
+  "cohort": "selector-string-4",
+  "configuration": {
+    "Author": null,
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": true,
+      "selectors": [
+        [
+          "#alpha-block .section:has(h1.hxnewstitle)"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "YYYY年MM月DD日 HH:mm",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "p.fs12"
+        }
+      ],
+      "timezone": "Asia/Tokyo"
+    },
+    "Dek": null,
+    "Domain": "www.ossnews.jp",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "#alpha-block h1.hxnewstitle"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 79658,
+      "path": "internal/fixtures/www.ossnews.jp.html",
+      "sha256": "a137565924151fda0612bf9ea87756e893eab753ab6bb3580aaa6899f3ab7959"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwOssnewsJpExtractor",
+  "id": "OssnewsJpExtractor",
+  "source": {
+    "end_line": 48,
+    "line": 46,
+    "path": "internal/extractors/custom/www_ossnews_jp.go",
+    "sha256": "d2a0d88cfaf98ec1f52ffe44188664b8207ae196328e2e5ea586d7ea1ddf0048"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

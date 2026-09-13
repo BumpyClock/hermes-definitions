@@ -1,0 +1,105 @@
+{
+  "cohort": "selector-string-4",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "a[rel=author]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".about-the-author",
+        ".pullquote",
+        ".newsletter-signup-component",
+        ".top-comment"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".body"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".pub-date"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".dek"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.slate.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".hed"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 51272,
+      "path": "internal/fixtures/www.slate.com.html",
+      "sha256": "f88475a3af1d9a256bbf3f031cb4dca12d2e34e44b65d879074c682af73b367f"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwSlateComExtractor",
+  "id": "SlateExtractor",
+  "source": {
+    "end_line": 60,
+    "line": 7,
+    "path": "internal/extractors/custom/www_slate_com.go",
+    "sha256": "0594eb3892b9dccae02097ac482ca74df8474e0a4d4a810a8a662e14055a9bf7"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

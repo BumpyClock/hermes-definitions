@@ -1,0 +1,105 @@
+{
+  "cohort": "selector-string-1",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:author\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        "div.AdMod",
+        "div.LoginSelectArea",
+        "time",
+        "div.notPrint"
+      ],
+      "disable_default_cleaner": true,
+      "selectors": [
+        [
+          "main"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"pubdate\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.asahi.com",
+    "Excerpt": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:description\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "main h1"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".ArticleTitle h1"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 117782,
+      "path": "internal/fixtures/www.asahi.com.html",
+      "sha256": "3071ccef69328ed1bdf14b7fe195dbacd0cb416dc0c68d61c1f1fd5acf71ca0b"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwAsahiComExtractor",
+  "id": "AsahiComExtractor",
+  "source": {
+    "end_line": 63,
+    "line": 61,
+    "path": "internal/extractors/custom/www_asahi_com.go",
+    "sha256": "d62d52f57a655084d56a48200ceecac7189209a991bea1b0bce2d790ea9f4a43"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

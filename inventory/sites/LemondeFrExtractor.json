@@ -1,0 +1,112 @@
+{
+  "cohort": "selector-string-2",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".article__author-link"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".author__name"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        "figcaption"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".article__content"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:article:published_time\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".article__desc"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.lemonde.fr",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1.article__title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 89457,
+      "path": "internal/fixtures/www.lemonde.fr.html",
+      "sha256": "6f1144feb4e256bb61c215b2b9f25caf510df054945497347a0455ba2123a189"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwLemondeFrExtractor",
+  "id": "LemondeFrExtractor",
+  "source": {
+    "end_line": 58,
+    "line": 56,
+    "path": "internal/extractors/custom/www_lemonde_fr.go",
+    "sha256": "54b3b14f4595d41d1760dd4e333e0cec805ebb9857105fb68933f8840dba568f"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": [
+    {
+      "line": 51,
+      "path": "internal/parser/popular_sites_test.go",
+      "text": "url:  \"https://www.lemonde.fr/afrique/article/2026/07/10/example.html\","
+    }
+  ]
+}

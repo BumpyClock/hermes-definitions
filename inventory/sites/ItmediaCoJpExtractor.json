@@ -1,0 +1,102 @@
+{
+  "cohort": "selector-string-2",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "#byline"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        "#snsSharebox"
+      ],
+      "disable_default_cleaner": true,
+      "selectors": [
+        [
+          "#cmsBody"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:modified_time\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "#cmsAbstract h2"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.itmedia.co.jp",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": [
+      "www.atmarkit.co.jp",
+      "techtarget.itmedia.co.jp",
+      "nlab.itmedia.co.jp"
+    ],
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "#cmsTitle h1"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 68784,
+      "path": "internal/fixtures/www.itmedia.co.jp.html",
+      "sha256": "64fbc42a3ac7618e9b6c0567711f321024d69098c69c9bc0804d2b35a487b174"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwItmediaCoJpExtractor",
+  "id": "ItmediaCoJpExtractor",
+  "source": {
+    "end_line": 66,
+    "line": 64,
+    "path": "internal/extractors/custom/www_itmedia_co_jp.go",
+    "sha256": "a544932f0a150deee0fa323fd7b041f163a04bacfa111da4d18b2491b0912e67"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

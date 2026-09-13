@@ -1,0 +1,110 @@
+{
+  "cohort": "attribute-text-cleanup-43",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "a.articleHeader_name"
+        },
+        {
+          "Attribute": "",
+          "Selector": "main div.article-author a.article-author__name"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "div.article-body"
+        ],
+        [
+          "main article div"
+        ]
+      ],
+      "transforms": {
+        "img": {
+          "kind": "function",
+          "line": 56,
+          "path": "internal/extractors/custom/news_mynavi_jp.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.init.func8"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:description\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "news.mynavi.jp",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:title\"]"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 116814,
+      "path": "internal/fixtures/news.mynavi.jp.html",
+      "sha256": "b5909b5caf1440584f3cc7ac8c798796b38e0cc6302a6dd0397dcb2485b4719a"
+    }
+  ],
+  "function_bearing": true,
+  "getter": "GetNewsMynaviJpExtractor",
+  "id": "NewsMynaviJpExtractor",
+  "source": {
+    "end_line": 71,
+    "line": 69,
+    "path": "internal/extractors/custom/news_mynavi_jp.go",
+    "sha256": "1afedfbe56bd47c8123c04e69a09808afee6e53e993029a5609156fcdef0d2ea"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

@@ -1,0 +1,76 @@
+{
+  "cohort": "selector-string-4",
+  "configuration": {
+    "Author": null,
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "div.p-main-contents"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.yomiuri.co.jp",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1.title-article.c-article-title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 53691,
+      "path": "internal/fixtures/www.yomiuri.co.jp.html",
+      "sha256": "10526fbe67ceb19c7e2f26eac66c407b85f4c8e3a84d097b1692dd9ade9973e3"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwYomiuriCoJpExtractor",
+  "id": "YomiuriCoJpExtractor",
+  "source": {
+    "end_line": 39,
+    "line": 37,
+    "path": "internal/extractors/custom/www_yomiuri_co_jp.go",
+    "sha256": "4e451e4bd9cda879f02fae2da67ab47de38bb5775791ccad8593b42ebf024a5d"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

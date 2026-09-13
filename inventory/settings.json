@@ -1,0 +1,168 @@
+{
+  "configured": {
+    "AllowMultiple": [],
+    "Extend": [
+      {
+        "site": "PitchforkExtractor",
+        "value": {
+          "score": {
+            "allowMultiple": false,
+            "format": "",
+            "selectors": [
+              {
+                "Attribute": "",
+                "Selector": "p[class*=\"Rating\"]"
+              },
+              {
+                "Attribute": "",
+                "Selector": ".score"
+              }
+            ],
+            "timezone": ""
+          }
+        }
+      },
+      {
+        "site": "TimesofindiaExtractor",
+        "value": {
+          "reporter": {
+            "allowMultiple": false,
+            "format": "",
+            "selectors": [
+              {
+                "Attribute": "",
+                "Selector": "div.byline"
+              }
+            ],
+            "timezone": ""
+          }
+        }
+      }
+    ],
+    "Format": [
+      {
+        "field": "DatePublished",
+        "site": "OssnewsJpExtractor",
+        "value": "YYYY年MM月DD日 HH:mm"
+      },
+      {
+        "field": "DatePublished",
+        "site": "PhpspotOrgExtractor",
+        "value": "YYYY年MM月DD日"
+      },
+      {
+        "field": "DatePublished",
+        "site": "Publickey1JpExtractor",
+        "value": "YYYY年MM月DD日"
+      },
+      {
+        "field": "DatePublished",
+        "site": "WeeklyAsciiJpExtractor",
+        "value": "YYYY年MM月DD日 HH:mm"
+      }
+    ],
+    "NextPageURL": [],
+    "Timezone": [
+      {
+        "field": "DatePublished",
+        "site": "BookwalkerJpExtractor",
+        "value": "Asia/Tokyo"
+      },
+      {
+        "field": "DatePublished",
+        "site": "CBSSportsExtractor",
+        "value": "UTC"
+      },
+      {
+        "field": "DatePublished",
+        "site": "MoongiftJpExtractor",
+        "value": "Asia/Tokyo"
+      },
+      {
+        "field": "DatePublished",
+        "site": "OssnewsJpExtractor",
+        "value": "Asia/Tokyo"
+      },
+      {
+        "field": "DatePublished",
+        "site": "PhpspotOrgExtractor",
+        "value": "Asia/Tokyo"
+      },
+      {
+        "field": "DatePublished",
+        "site": "Publickey1JpExtractor",
+        "value": "Asia/Tokyo"
+      },
+      {
+        "field": "DatePublished",
+        "site": "SIExtractor",
+        "value": "America/New_York"
+      },
+      {
+        "field": "DatePublished",
+        "site": "WeeklyAsciiJpExtractor",
+        "value": "Asia/Tokyo"
+      }
+    ]
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "lexical_member_uses": {
+    "AllowMultiple": [],
+    "Extend": [],
+    "Format": [
+      {
+        "line": 268,
+        "path": "examples/api-server/main.go",
+        "text": "return req.URL, req.Format, nil"
+      },
+      {
+        "line": 320,
+        "path": "examples/api-server/main.go",
+        "text": "Timestamp:      time.Now().UTC().Format(time.RFC3339),"
+      },
+      {
+        "line": 341,
+        "path": "examples/api-server/main.go",
+        "text": "Timestamp:      time.Now().UTC().Format(time.RFC3339),"
+      },
+      {
+        "line": 368,
+        "path": "examples/api-server/main.go",
+        "text": "\"timestamp\": time.Now().UTC().Format(time.RFC3339),"
+      },
+      {
+        "line": 78,
+        "path": "examples/basic/main.go",
+        "text": "fmt.Printf(\"📅 Published: %s\\n\", result.DatePublished.Format(\"2006-01-02\"))"
+      },
+      {
+        "line": 149,
+        "path": "internal/extractors/generic/date.go",
+        "text": "iso := t.Format(\"2006-01-02T15:04:05.000Z\")"
+      },
+      {
+        "line": 158,
+        "path": "internal/extractors/generic/date.go",
+        "text": "iso := t.Format(\"2006-01-02T15:04:05.000Z\")"
+      },
+      {
+        "line": 165,
+        "path": "internal/extractors/generic/date.go",
+        "text": "iso := date.UTC().Format(\"2006-01-02T15:04:05.000Z\")"
+      },
+      {
+        "line": 172,
+        "path": "internal/extractors/generic/date.go",
+        "text": "iso := date.UTC().Format(\"2006-01-02T15:04:05.000Z\")"
+      },
+      {
+        "line": 82,
+        "path": "result.go",
+        "text": "sb.WriteString(r.DatePublished.Format(\"2006-01-02\"))"
+      }
+    ],
+    "NextPageURL": [],
+    "Timezone": []
+  },
+  "note": "Format hits are unrelated time.Time/result presentation calls; see settings-audit.md for consumer analysis."
+}

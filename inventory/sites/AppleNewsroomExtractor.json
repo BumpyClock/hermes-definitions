@@ -1,0 +1,79 @@
+{
+  "cohort": "selector-string-4",
+  "configuration": {
+    "Author": null,
+    "Content": {
+      "clean": [
+        ".docsanddownloads",
+        ".presscontacts",
+        "aside.legal-info"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "article .pagebody"
+        ],
+        [
+          ".pagebody"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": null,
+    "Dek": null,
+    "Domain": "www.apple.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": [
+      "apple.com"
+    ],
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1.hero-headline"
+        },
+        {
+          "Attribute": "",
+          "Selector": "article h1"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [],
+  "function_bearing": false,
+  "getter": "GetAppleNewsroomExtractor",
+  "id": "AppleNewsroomExtractor",
+  "source": {
+    "end_line": 29,
+    "line": 6,
+    "path": "internal/extractors/custom/www_apple_com.go",
+    "sha256": "1a1c7b2073610b3a1cb9abbe6f7eaa5997b239bff488e4c94c8b2e14e81f81d5"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": [
+    {
+      "line": 41,
+      "path": "internal/parser/popular_sites_test.go",
+      "text": "url:  \"https://www.apple.com/newsroom/2026/07/example/\","
+    }
+  ]
+}

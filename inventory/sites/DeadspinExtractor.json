@@ -1,0 +1,133 @@
+{
+  "cohort": "attribute-text-cleanup-43",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "a[data-ga*=\"Author\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".author"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".magnifier",
+        ".lightbox"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".js_post-content"
+        ],
+        [
+          ".post-content"
+        ],
+        [
+          ".entry-content"
+        ]
+      ],
+      "transforms": {
+        "iframe.lazyload[data-recommend-id^=\"youtube://\"]": {
+          "kind": "function",
+          "line": 71,
+          "path": "internal/extractors/custom/deadspin_com.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.init.func3"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        },
+        {
+          "Attribute": "datetime",
+          "Selector": "time.updated[datetime]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "deadspin.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": [
+      "jezebel.com",
+      "lifehacker.com",
+      "kotaku.com",
+      "gizmodo.com",
+      "jalopnik.com",
+      "kinja.com",
+      "avclub.com",
+      "clickhole.com",
+      "splinternews.com",
+      "theonion.com",
+      "theroot.com",
+      "thetakeout.com",
+      "theinventory.com"
+    ],
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "header h1"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1.headline"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 77079,
+      "path": "internal/fixtures/deadspin.com--video.html",
+      "sha256": "a1e2a6b3b189e2fc125c55b90cfd0f4fa41c9a0c55de227d7005ecacfb03378c"
+    },
+    {
+      "bytes": 93168,
+      "path": "internal/fixtures/deadspin.com.html",
+      "sha256": "ba3eac7f3bc8d415ee105bc260b99338fc6a4bf02a255c0b121c1294b945f4d8"
+    }
+  ],
+  "function_bearing": true,
+  "getter": "GetDeadspinComExtractor",
+  "id": "DeadspinExtractor",
+  "source": {
+    "end_line": 93,
+    "line": 91,
+    "path": "internal/extractors/custom/deadspin_com.go",
+    "sha256": "64b2e48b056788b52956cb2fc68dd5fa8f04c84b825f276fb42004baa6f6fb5a"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

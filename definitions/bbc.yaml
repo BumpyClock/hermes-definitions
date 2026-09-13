@@ -1,0 +1,18 @@
+schema: 1
+site: bbc
+hosts: [bbc.com, bbc.co.uk]
+metadata:
+  title:
+    - text: h1
+  author:
+    - text: '[data-testid="byline-contributors"]'
+  date_published:
+    - attribute: {selector: time, name: datetime}
+  lead_image_url:
+    - attribute: {selector: 'meta[name="og:image"]', name: value}
+content:
+  groups:
+    - [article, 'article p']
+  remove:
+    - '[data-component="recommendations"]'
+    - '[data-testid="byline"]'

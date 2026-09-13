@@ -1,0 +1,97 @@
+{
+  "cohort": "selector-string-4",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "p.author"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "div#contents_detail"
+        ],
+        [
+          "div.article"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "YYYY年MM月DD日 HH:mm",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "p.date"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"odate\"]"
+        }
+      ],
+      "timezone": "Asia/Tokyo"
+    },
+    "Dek": null,
+    "Domain": "weekly.ascii.jp",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "article h1"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1[itemprop=\"headline\"]"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 43368,
+      "path": "internal/fixtures/weekly.ascii.jp.html",
+      "sha256": "6e3810b541bfcb7a585300020459e71e524d12c85ac906d51538b09b794016ab"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWeeklyAsciiJpExtractor",
+  "id": "WeeklyAsciiJpExtractor",
+  "source": {
+    "end_line": 54,
+    "line": 52,
+    "path": "internal/extractors/custom/weekly_ascii_jp.go",
+    "sha256": "8b9ad91ae28edd7be93085791d469f8cee750536d91c572d5b248da435778509"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

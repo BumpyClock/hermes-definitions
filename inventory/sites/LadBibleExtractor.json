@@ -1,0 +1,92 @@
+{
+  "cohort": "selector-string-1",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "[class*=Byline]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        "time",
+        "source",
+        "a[href^=\"https://www.ladbible.com/\"]",
+        "picture",
+        "[class*=StyledCardBlock]"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "[class*=ArticleContainer]"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "time"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.ladbible.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 137481,
+      "path": "internal/fixtures/www.ladbible.com.html",
+      "sha256": "baca25d198de23919855be336a45e0b2870a13592c8b8f8e26f5ee5450e764b0"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwLadbibleComExtractor",
+  "id": "LadBibleExtractor",
+  "source": {
+    "end_line": 54,
+    "line": 7,
+    "path": "internal/extractors/custom/www_ladbible_com.go",
+    "sha256": "76feb6d453579e4cc76cfd9624c8f0bfb201bedc51ab6e58abf8d15a3976f4a5"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

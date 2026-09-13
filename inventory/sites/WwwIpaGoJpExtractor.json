@@ -1,0 +1,68 @@
+{
+  "cohort": "selector-string-1",
+  "configuration": {
+    "Author": null,
+    "Content": {
+      "clean": [
+        "p.ipar_text_right"
+      ],
+      "disable_default_cleaner": true,
+      "selectors": [
+        [
+          "#ipar_main"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "p.ipar_text_right"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.ipa.go.jp",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": null,
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 17930,
+      "path": "internal/fixtures/www.ipa.go.jp.html",
+      "sha256": "6533dd2cead39fccc8d57fefd9972786ae202284383674549cc667d238dbd820"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwIpaGoJpExtractor",
+  "id": "WwwIpaGoJpExtractor",
+  "source": {
+    "end_line": 45,
+    "line": 43,
+    "path": "internal/extractors/custom/www_ipa_go_jp.go",
+    "sha256": "ffe73b0d50d411c13b38b0809648ae3b7d343ae7ba00c8c4eca1f1ed7c37224e"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

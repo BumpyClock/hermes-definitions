@@ -1,0 +1,111 @@
+{
+  "cohort": "selector-string-1",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"sailthru.author\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "a.author.url.fn"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "div[class^=\"loc article-content\"]"
+        ],
+        [
+          "div.article-body__inner"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".mntl-attribution__item-date"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".article-header h2"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "people.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".article-header h1"
+        },
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:title\"]"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 110596,
+      "path": "internal/fixtures/people.com.html",
+      "sha256": "94a62f994a64a68b320d4955c1b694355ad9a70f23e7f0bf96b94fc5903db3ec"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetPeopleExtractor",
+  "id": "PeopleExtractor",
+  "source": {
+    "end_line": 55,
+    "line": 53,
+    "path": "internal/extractors/custom/people_com.go",
+    "sha256": "dd66e0c2cf74c99c3bd0503b2f3f3e35258c021da6335e82c76cfbe23a0d94a9"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

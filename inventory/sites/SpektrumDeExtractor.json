@@ -1,0 +1,113 @@
+{
+  "cohort": "selector-string-1",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".content__author__info__name"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".breadcrumbs",
+        ".hide-for-print",
+        "aside",
+        "header h2",
+        ".image__article__top",
+        ".content__author",
+        ".copyright",
+        ".callout-box"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "article.content"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".content__meta__date"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".content__intro"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.spektrum.de",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        },
+        {
+          "Attribute": "content",
+          "Selector": "meta[property=\"og:image\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".image__article__top img"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".content__title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 105191,
+      "path": "internal/fixtures/www.spektrum.de.html",
+      "sha256": "833a336b0d74714ef39502e3b8c0517967ff205eda30097ead1d99fe222d0c76"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwSpektrumDeExtractor",
+  "id": "SpektrumDeExtractor",
+  "source": {
+    "end_line": 71,
+    "line": 69,
+    "path": "internal/extractors/custom/www_spektrum_de.go",
+    "sha256": "ef479dc2ea1706914ad92eb15d8b8ced9964adc3d1a01d0b1ee78c5aa4764bfb"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

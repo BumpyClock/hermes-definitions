@@ -1,0 +1,107 @@
+{
+  "cohort": "selector-string-2",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:author\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "a[rel=\"author\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".visually-hidden",
+        "figcaption img.photo",
+        ".alert-message"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "article.article.main-content"
+        ],
+        [
+          "article.content"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.wired.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1[data-testId=\"ContentHeaderHed\"]"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 112583,
+      "path": "internal/fixtures/www.wired.com--content-test.html",
+      "sha256": "8e69d000052ef41e6aaad291231dcb5eee71f1921819375a2b06c19a57890459"
+    },
+    {
+      "bytes": 135561,
+      "path": "internal/fixtures/www.wired.com--other.html",
+      "sha256": "d982fd8309e66493de83e15e41c38c3141fe18e8df09908422852a31ec76cf3f"
+    },
+    {
+      "bytes": 184732,
+      "path": "internal/fixtures/www.wired.com.html",
+      "sha256": "9226ae52b64ad5a5edb346618be47021320f55b254fce29a212f83f82ccce9b9"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwWiredComExtractor",
+  "id": "WwwWiredComExtractor",
+  "source": {
+    "end_line": 54,
+    "line": 52,
+    "path": "internal/extractors/custom/www_wired_com.go",
+    "sha256": "b8dffbec820495476a5f5c85d59a6f69062792351e26b96347a6829db5b1fbdd"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

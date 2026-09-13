@@ -1,0 +1,134 @@
+{
+  "cohort": "complex-exception-45",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "content",
+          "Selector": "link[itemprop=\"name\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".yt-user-info"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": null,
+      "disable_default_cleaner": true,
+      "selectors": [
+        [
+          "#player-container-outer"
+        ],
+        [
+          "ytd-expandable-video-description-body-renderer #description"
+        ],
+        [
+          "#player-api",
+          "#description"
+        ]
+      ],
+      "transforms": {
+        "#player-api": {
+          "kind": "function",
+          "line": 70,
+          "path": "internal/extractors/custom/www_youtube_com.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.transformYouTubePlayerAPI"
+        },
+        "#player-container-outer": {
+          "kind": "function",
+          "line": 86,
+          "path": "internal/extractors/custom/www_youtube_com.go",
+          "symbol": "github.com/BumpyClock/hermes/internal/extractors/custom.transformYouTubePlayerContainer"
+        }
+      }
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[itemProp=\"datePublished\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.youtube.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"title\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".watch-title"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1.watch-title-container"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 990105,
+      "path": "internal/fixtures/www.youtube.com.html",
+      "sha256": "6b72a3ea578d5212ac859431a1eec2f44bb3b287e1f1db7945df35a22a03621f"
+    }
+  ],
+  "function_bearing": true,
+  "getter": "GetYouTubeExtractor",
+  "id": "YouTubeExtractor",
+  "source": {
+    "end_line": 108,
+    "line": 106,
+    "path": "internal/extractors/custom/www_youtube_com.go",
+    "sha256": "bb7dac3b85b88ff97319e5eb736ccf81c14122167168bd1dfdf7b0b7ed875c78"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": [
+    {
+      "line": 54,
+      "path": "internal/cleaners/integration_test.go",
+      "text": "<iframe src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" width=\"560\" height=\"315\"></iframe>"
+    },
+    {
+      "line": 528,
+      "path": "internal/utils/dom/clean_test.go",
+      "text": "<iframe src=\"https://www.youtube.com/embed/abc123\">YouTube</iframe>"
+    },
+    {
+      "line": 540,
+      "path": "internal/utils/dom/clean_test.go",
+      "text": "youtubeFrame := result.Find(`iframe[src^=\"https://www.youtube.com\"]`)"
+    }
+  ]
+}

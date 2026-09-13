@@ -1,0 +1,96 @@
+{
+  "cohort": "selector-string-3",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": ".article__author"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        "image-credits",
+        "box[type=citation]"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".article"
+        ]
+      ],
+      "transforms": {
+        ".article__author": {
+          "kind": "string",
+          "target_tag": "p"
+        },
+        "byline": {
+          "kind": "string",
+          "target_tag": "p"
+        },
+        "linkbox": {
+          "kind": "string",
+          "target_tag": "p"
+        },
+        "p.title": {
+          "kind": "string",
+          "target_tag": "h1"
+        }
+      }
+    },
+    "DatePublished": null,
+    "Dek": null,
+    "Domain": "epaper.zeit.de",
+    "Excerpt": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "subtitle"
+        }
+      ],
+      "timezone": ""
+    },
+    "Extend": null,
+    "LeadImageURL": null,
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "p.title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 3192,
+      "path": "internal/fixtures/epaper.zeit.de.html",
+      "sha256": "410a8c79ff2b259e493b1f9246ef9da6a9d2c4423d71656bad8a966b11456151"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetEpaperZeitDeExtractor",
+  "id": "EpaperZeitDeExtractor",
+  "source": {
+    "end_line": 55,
+    "line": 53,
+    "path": "internal/extractors/custom/epaper_zeit_de.go",
+    "sha256": "45e21408fe1f0471ea457ff0525a58a730f88f5339e7afc98e1be5e8aa668a15"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

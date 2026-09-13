@@ -1,0 +1,122 @@
+{
+  "cohort": "selector-string-3",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "a.c-byline__link"
+        },
+        {
+          "Attribute": "",
+          "Selector": "a.content-author.tracked-offpage"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        ".c-related-links-wrapper",
+        ".module-related"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          ".l-article-content"
+        ],
+        [
+          ".lead-container",
+          ".article-content"
+        ],
+        [
+          ".article-content"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"article:published_time\"]"
+        },
+        {
+          "Attribute": "",
+          "Selector": "time.content-published-date"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h2.l-article-header__row--lead"
+        },
+        {
+          "Attribute": "",
+          "Selector": ".content-description"
+        }
+      ],
+      "timezone": ""
+    },
+    "Domain": "www.rollingstone.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "value",
+          "Selector": "meta[name=\"og:image\"]"
+        }
+      ],
+      "timezone": ""
+    },
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1.l-article-header__row--title"
+        },
+        {
+          "Attribute": "",
+          "Selector": "h1.content-title"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 202402,
+      "path": "internal/fixtures/www.rollingstone.com.html",
+      "sha256": "6e512809cf85d68e2c4178a15836ebaf84109fc06f7ce4b0d8c4babd920ed325"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetRollingStoneExtractor",
+  "id": "RollingStoneExtractor",
+  "source": {
+    "end_line": 63,
+    "line": 61,
+    "path": "internal/extractors/custom/www_rollingstone_com.go",
+    "sha256": "abdf68a32c0f633b20010f9fa09d516fe8e2d4b4dafc35e102d201f7068a2f53"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}

@@ -1,0 +1,78 @@
+{
+  "cohort": "selector-string-1",
+  "configuration": {
+    "Author": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "span.authorname-txt"
+        }
+      ],
+      "timezone": ""
+    },
+    "Content": {
+      "clean": [
+        "span.caption"
+      ],
+      "disable_default_cleaner": false,
+      "selectors": [
+        [
+          "div.richtext"
+        ]
+      ],
+      "transforms": {}
+    },
+    "DatePublished": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "span.time"
+        }
+      ],
+      "timezone": ""
+    },
+    "Dek": null,
+    "Domain": "www.msn.com",
+    "Excerpt": null,
+    "Extend": null,
+    "LeadImageURL": null,
+    "NextPageURL": null,
+    "SupportedDomains": null,
+    "Title": {
+      "allowMultiple": false,
+      "format": "",
+      "selectors": [
+        {
+          "Attribute": "",
+          "Selector": "h1"
+        }
+      ],
+      "timezone": ""
+    }
+  },
+  "engine_revision": "2cc319bac8ce6d869f64b4268a74ce293cfe336b",
+  "fixture_mapping": "canonical/alias filename, including parser www fallback; not proof of assertion coverage",
+  "fixtures": [
+    {
+      "bytes": 28124,
+      "path": "internal/fixtures/www.msn.com.html",
+      "sha256": "01a0282bcb0f9a4e3b1730129f2733bb7b78a57eaf7302f28e0c8b1a60f34c4a"
+    }
+  ],
+  "function_bearing": false,
+  "getter": "GetWwwMsnComExtractor",
+  "id": "MSNExtractor",
+  "source": {
+    "end_line": 43,
+    "line": 7,
+    "path": "internal/extractors/custom/www_msn_com.go",
+    "sha256": "f9a658b621501bbb10b9955659e7e0ec713e7c8ad495c7e4141cf6d5ab85350b"
+  },
+  "status": "current-layout-unverified",
+  "status_reason": "Frozen inventory only; no fresh capture attempted in bounded issue 31.",
+  "test_references": []
+}
